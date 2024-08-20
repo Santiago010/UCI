@@ -3,8 +3,23 @@
 
 CMakeFiles/uci.dir/main.cpp.o: main.cpp \
   /usr/include/alloca.h \
+  /usr/include/apr-1.0/apr.h \
+  /usr/include/apr-1.0/apr_allocator.h \
+  /usr/include/apr-1.0/apr_errno.h \
+  /usr/include/apr-1.0/apr_general.h \
+  /usr/include/apr-1.0/apr_pools.h \
+  /usr/include/apr-1.0/apr_thread_mutex.h \
+  /usr/include/apr-1.0/apr_time.h \
+  /usr/include/apr-1.0/apr_want.h \
+  /usr/include/asm-generic/bitsperlong.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
+  /usr/include/asm-generic/int-ll64.h \
+  /usr/include/asm-generic/posix_types.h \
+  /usr/include/asm-generic/socket.h \
+  /usr/include/asm-generic/sockios.h \
+  /usr/include/asm-generic/types.h \
+  /usr/include/assert.h \
   /usr/include/c++/13/algorithm \
   /usr/include/c++/13/backward/auto_ptr.h \
   /usr/include/c++/13/backward/binders.h \
@@ -70,8 +85,10 @@ CMakeFiles/uci.dir/main.cpp.o: main.cpp \
   /usr/include/c++/13/bits/stl_iterator_base_types.h \
   /usr/include/c++/13/bits/stl_map.h \
   /usr/include/c++/13/bits/stl_multimap.h \
+  /usr/include/c++/13/bits/stl_multiset.h \
   /usr/include/c++/13/bits/stl_pair.h \
   /usr/include/c++/13/bits/stl_raw_storage_iter.h \
+  /usr/include/c++/13/bits/stl_set.h \
   /usr/include/c++/13/bits/stl_tempbuf.h \
   /usr/include/c++/13/bits/stl_tree.h \
   /usr/include/c++/13/bits/stl_uninitialized.h \
@@ -87,6 +104,7 @@ CMakeFiles/uci.dir/main.cpp.o: main.cpp \
   /usr/include/c++/13/cctype \
   /usr/include/c++/13/cerrno \
   /usr/include/c++/13/clocale \
+  /usr/include/c++/13/cstdarg \
   /usr/include/c++/13/cstdio \
   /usr/include/c++/13/cstdlib \
   /usr/include/c++/13/cwchar \
@@ -111,6 +129,7 @@ CMakeFiles/uci.dir/main.cpp.o: main.cpp \
   /usr/include/c++/13/memory \
   /usr/include/c++/13/new \
   /usr/include/c++/13/ostream \
+  /usr/include/c++/13/set \
   /usr/include/c++/13/sstream \
   /usr/include/c++/13/stdexcept \
   /usr/include/c++/13/streambuf \
@@ -123,37 +142,86 @@ CMakeFiles/uci.dir/main.cpp.o: main.cpp \
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
+  /usr/include/fcntl.h \
   /usr/include/features-time64.h \
   /usr/include/features.h \
+  /usr/include/inttypes.h \
+  /usr/include/limits.h \
+  /usr/include/linux/close_range.h \
   /usr/include/linux/errno.h \
+  /usr/include/linux/falloc.h \
+  /usr/include/linux/limits.h \
+  /usr/include/linux/posix_types.h \
+  /usr/include/linux/stat.h \
+  /usr/include/linux/stddef.h \
+  /usr/include/linux/types.h \
   /usr/include/locale.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \
+  /usr/include/signal.h \
   /usr/include/stdc-predef.h \
   /usr/include/stdint.h \
   /usr/include/stdio.h \
   /usr/include/stdlib.h \
+  /usr/include/string.h \
+  /usr/include/strings.h \
   /usr/include/time.h \
+  /usr/include/unistd.h \
   /usr/include/wchar.h \
   /usr/include/wctype.h \
+  /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
   /usr/include/x86_64-linux-gnu/asm/errno.h \
+  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
+  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
+  /usr/include/x86_64-linux-gnu/asm/socket.h \
+  /usr/include/x86_64-linux-gnu/asm/sockios.h \
+  /usr/include/x86_64-linux-gnu/asm/types.h \
   /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
   /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+  /usr/include/x86_64-linux-gnu/bits/confname.h \
   /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
   /usr/include/x86_64-linux-gnu/bits/endian.h \
   /usr/include/x86_64-linux-gnu/bits/endianness.h \
+  /usr/include/x86_64-linux-gnu/bits/environments.h \
   /usr/include/x86_64-linux-gnu/bits/errno.h \
+  /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
+  /usr/include/x86_64-linux-gnu/bits/fcntl.h \
   /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
   /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
   /usr/include/x86_64-linux-gnu/bits/locale.h \
   /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
   /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/sched.h \
   /usr/include/x86_64-linux-gnu/bits/select.h \
   /usr/include/x86_64-linux-gnu/bits/setjmp.h \
+  /usr/include/x86_64-linux-gnu/bits/sigaction.h \
+  /usr/include/x86_64-linux-gnu/bits/sigcontext.h \
+  /usr/include/x86_64-linux-gnu/bits/sigevent-consts.h \
+  /usr/include/x86_64-linux-gnu/bits/siginfo-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/siginfo-consts-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/siginfo-consts.h \
+  /usr/include/x86_64-linux-gnu/bits/signal_ext.h \
+  /usr/include/x86_64-linux-gnu/bits/signum-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
+  /usr/include/x86_64-linux-gnu/bits/sigstack.h \
+  /usr/include/x86_64-linux-gnu/bits/sigstksz.h \
+  /usr/include/x86_64-linux-gnu/bits/sigthread.h \
+  /usr/include/x86_64-linux-gnu/bits/sockaddr.h \
+  /usr/include/x86_64-linux-gnu/bits/socket.h \
+  /usr/include/x86_64-linux-gnu/bits/socket_type.h \
+  /usr/include/x86_64-linux-gnu/bits/ss_flags.h \
+  /usr/include/x86_64-linux-gnu/bits/stat.h \
+  /usr/include/x86_64-linux-gnu/bits/statx-generic.h \
+  /usr/include/x86_64-linux-gnu/bits/statx.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
@@ -161,6 +229,7 @@ CMakeFiles/uci.dir/main.cpp.o: main.cpp \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
   /usr/include/x86_64-linux-gnu/bits/time.h \
   /usr/include/x86_64-linux-gnu/bits/time64.h \
@@ -174,17 +243,29 @@ CMakeFiles/uci.dir/main.cpp.o: main.cpp \
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/idtype_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigval_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/stack_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
@@ -193,11 +274,14 @@ CMakeFiles/uci.dir/main.cpp.o: main.cpp \
   /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
   /usr/include/x86_64-linux-gnu/bits/typesizes.h \
   /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
@@ -214,204 +298,525 @@ CMakeFiles/uci.dir/main.cpp.o: main.cpp \
   /usr/include/x86_64-linux-gnu/sys/cdefs.h \
   /usr/include/x86_64-linux-gnu/sys/select.h \
   /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
+  /usr/include/x86_64-linux-gnu/sys/socket.h \
+  /usr/include/x86_64-linux-gnu/sys/stat.h \
   /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/include/x86_64-linux-gnu/sys/ucontext.h \
+  /usr/include/x86_64-linux-gnu/sys/wait.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h \
-  /usr/local/include/activemq-cpp-3.9.5/activemq/commands/BaseCommand.h \
-  /usr/local/include/activemq-cpp-3.9.5/activemq/commands/BaseDataStructure.h \
-  /usr/local/include/activemq-cpp-3.9.5/activemq/commands/Command.h \
-  /usr/local/include/activemq-cpp-3.9.5/activemq/commands/DataStructure.h \
-  /usr/local/include/activemq-cpp-3.9.5/activemq/commands/Response.h \
-  /usr/local/include/activemq-cpp-3.9.5/activemq/core/ActiveMQConnectionFactory.h \
-  /usr/local/include/activemq-cpp-3.9.5/activemq/exceptions/ActiveMQException.h \
-  /usr/local/include/activemq-cpp-3.9.5/activemq/exceptions/ExceptionDefines.h \
-  /usr/local/include/activemq-cpp-3.9.5/activemq/transport/FutureResponse.h \
-  /usr/local/include/activemq-cpp-3.9.5/activemq/transport/ResponseCallback.h \
-  /usr/local/include/activemq-cpp-3.9.5/activemq/transport/Transport.h \
-  /usr/local/include/activemq-cpp-3.9.5/activemq/util/Config.h \
-  /usr/local/include/activemq-cpp-3.9.5/activemq/util/Service.h \
-  /usr/local/include/activemq-cpp-3.9.5/activemq/wireformat/MarshalAware.h \
-  /usr/local/include/activemq-cpp-3.9.5/cms/AsyncCallback.h \
-  /usr/local/include/activemq-cpp-3.9.5/cms/BytesMessage.h \
-  /usr/local/include/activemq-cpp-3.9.5/cms/CMSException.h \
-  /usr/local/include/activemq-cpp-3.9.5/cms/CMSProperties.h \
-  /usr/local/include/activemq-cpp-3.9.5/cms/Closeable.h \
-  /usr/local/include/activemq-cpp-3.9.5/cms/Config.h \
-  /usr/local/include/activemq-cpp-3.9.5/cms/Connection.h \
-  /usr/local/include/activemq-cpp-3.9.5/cms/ConnectionFactory.h \
-  /usr/local/include/activemq-cpp-3.9.5/cms/ConnectionMetaData.h \
-  /usr/local/include/activemq-cpp-3.9.5/cms/DeliveryMode.h \
-  /usr/local/include/activemq-cpp-3.9.5/cms/Destination.h \
-  /usr/local/include/activemq-cpp-3.9.5/cms/ExceptionListener.h \
-  /usr/local/include/activemq-cpp-3.9.5/cms/IllegalStateException.h \
-  /usr/local/include/activemq-cpp-3.9.5/cms/InvalidDestinationException.h \
-  /usr/local/include/activemq-cpp-3.9.5/cms/MapMessage.h \
-  /usr/local/include/activemq-cpp-3.9.5/cms/Message.h \
-  /usr/local/include/activemq-cpp-3.9.5/cms/MessageAvailableListener.h \
-  /usr/local/include/activemq-cpp-3.9.5/cms/MessageConsumer.h \
-  /usr/local/include/activemq-cpp-3.9.5/cms/MessageEOFException.h \
-  /usr/local/include/activemq-cpp-3.9.5/cms/MessageEnumeration.h \
-  /usr/local/include/activemq-cpp-3.9.5/cms/MessageFormatException.h \
-  /usr/local/include/activemq-cpp-3.9.5/cms/MessageListener.h \
-  /usr/local/include/activemq-cpp-3.9.5/cms/MessageNotReadableException.h \
-  /usr/local/include/activemq-cpp-3.9.5/cms/MessageNotWriteableException.h \
-  /usr/local/include/activemq-cpp-3.9.5/cms/MessageProducer.h \
-  /usr/local/include/activemq-cpp-3.9.5/cms/Queue.h \
-  /usr/local/include/activemq-cpp-3.9.5/cms/QueueBrowser.h \
-  /usr/local/include/activemq-cpp-3.9.5/cms/Session.h \
-  /usr/local/include/activemq-cpp-3.9.5/cms/Startable.h \
-  /usr/local/include/activemq-cpp-3.9.5/cms/Stoppable.h \
-  /usr/local/include/activemq-cpp-3.9.5/cms/StreamMessage.h \
-  /usr/local/include/activemq-cpp-3.9.5/cms/TemporaryQueue.h \
-  /usr/local/include/activemq-cpp-3.9.5/cms/TemporaryTopic.h \
-  /usr/local/include/activemq-cpp-3.9.5/cms/TextMessage.h \
-  /usr/local/include/activemq-cpp-3.9.5/cms/Topic.h \
-  /usr/local/include/activemq-cpp-3.9.5/cms/UnsupportedOperationException.h \
-  /usr/local/include/activemq-cpp-3.9.5/decaf/internal/net/URIType.h \
-  /usr/local/include/activemq-cpp-3.9.5/decaf/io/Closeable.h \
-  /usr/local/include/activemq-cpp-3.9.5/decaf/io/Flushable.h \
-  /usr/local/include/activemq-cpp-3.9.5/decaf/io/IOException.h \
-  /usr/local/include/activemq-cpp-3.9.5/decaf/io/InputStream.h \
-  /usr/local/include/activemq-cpp-3.9.5/decaf/io/InterruptedIOException.h \
-  /usr/local/include/activemq-cpp-3.9.5/decaf/io/OutputStream.h \
-  /usr/local/include/activemq-cpp-3.9.5/decaf/lang/Comparable.h \
-  /usr/local/include/activemq-cpp-3.9.5/decaf/lang/Exception.h \
-  /usr/local/include/activemq-cpp-3.9.5/decaf/lang/Iterable.h \
-  /usr/local/include/activemq-cpp-3.9.5/decaf/lang/Number.h \
-  /usr/local/include/activemq-cpp-3.9.5/decaf/lang/Pointer.h \
-  /usr/local/include/activemq-cpp-3.9.5/decaf/lang/Runnable.h \
-  /usr/local/include/activemq-cpp-3.9.5/decaf/lang/Thread.h \
-  /usr/local/include/activemq-cpp-3.9.5/decaf/lang/Throwable.h \
-  /usr/local/include/activemq-cpp-3.9.5/decaf/lang/exceptions/ClassCastException.h \
-  /usr/local/include/activemq-cpp-3.9.5/decaf/lang/exceptions/ExceptionDefines.h \
-  /usr/local/include/activemq-cpp-3.9.5/decaf/lang/exceptions/IllegalArgumentException.h \
-  /usr/local/include/activemq-cpp-3.9.5/decaf/lang/exceptions/IllegalMonitorStateException.h \
-  /usr/local/include/activemq-cpp-3.9.5/decaf/lang/exceptions/IllegalStateException.h \
-  /usr/local/include/activemq-cpp-3.9.5/decaf/lang/exceptions/IllegalThreadStateException.h \
-  /usr/local/include/activemq-cpp-3.9.5/decaf/lang/exceptions/IndexOutOfBoundsException.h \
-  /usr/local/include/activemq-cpp-3.9.5/decaf/lang/exceptions/InterruptedException.h \
-  /usr/local/include/activemq-cpp-3.9.5/decaf/lang/exceptions/NullPointerException.h \
-  /usr/local/include/activemq-cpp-3.9.5/decaf/lang/exceptions/RuntimeException.h \
-  /usr/local/include/activemq-cpp-3.9.5/decaf/lang/exceptions/UnsupportedOperationException.h \
-  /usr/local/include/activemq-cpp-3.9.5/decaf/net/MalformedURLException.h \
-  /usr/local/include/activemq-cpp-3.9.5/decaf/net/URI.h \
-  /usr/local/include/activemq-cpp-3.9.5/decaf/net/URISyntaxException.h \
-  /usr/local/include/activemq-cpp-3.9.5/decaf/util/AbstractCollection.h \
-  /usr/local/include/activemq-cpp-3.9.5/decaf/util/AbstractSet.h \
-  /usr/local/include/activemq-cpp-3.9.5/decaf/util/Collection.h \
-  /usr/local/include/activemq-cpp-3.9.5/decaf/util/Comparator.h \
-  /usr/local/include/activemq-cpp-3.9.5/decaf/util/ConcurrentModificationException.h \
-  /usr/local/include/activemq-cpp-3.9.5/decaf/util/Config.h \
-  /usr/local/include/activemq-cpp-3.9.5/decaf/util/Iterator.h \
-  /usr/local/include/activemq-cpp-3.9.5/decaf/util/List.h \
-  /usr/local/include/activemq-cpp-3.9.5/decaf/util/ListIterator.h \
-  /usr/local/include/activemq-cpp-3.9.5/decaf/util/Map.h \
-  /usr/local/include/activemq-cpp-3.9.5/decaf/util/MapEntry.h \
-  /usr/local/include/activemq-cpp-3.9.5/decaf/util/NoSuchElementException.h \
-  /usr/local/include/activemq-cpp-3.9.5/decaf/util/Properties.h \
-  /usr/local/include/activemq-cpp-3.9.5/decaf/util/Set.h \
-  /usr/local/include/activemq-cpp-3.9.5/decaf/util/StlMap.h \
-  /usr/local/include/activemq-cpp-3.9.5/decaf/util/comparators/Less.h \
-  /usr/local/include/activemq-cpp-3.9.5/decaf/util/concurrent/Concurrent.h \
-  /usr/local/include/activemq-cpp-3.9.5/decaf/util/concurrent/CountDownLatch.h \
-  /usr/local/include/activemq-cpp-3.9.5/decaf/util/concurrent/Lock.h \
-  /usr/local/include/activemq-cpp-3.9.5/decaf/util/concurrent/Mutex.h \
-  /usr/local/include/activemq-cpp-3.9.5/decaf/util/concurrent/Synchronizable.h \
-  /usr/local/include/activemq-cpp-3.9.5/decaf/util/concurrent/TimeUnit.h \
-  /usr/local/include/activemq-cpp-3.9.5/decaf/util/concurrent/atomic/AtomicInteger.h \
-  /usr/local/include/activemq-cpp-3.9.5/decaf/util/concurrent/atomic/AtomicRefCounter.h
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h \
+  /usr/local/include/activemq-cpp-3.10.0/activemq/commands/ActiveMQDestination.h \
+  /usr/local/include/activemq-cpp-3.10.0/activemq/commands/ActiveMQTempDestination.h \
+  /usr/local/include/activemq-cpp-3.10.0/activemq/commands/BaseCommand.h \
+  /usr/local/include/activemq-cpp-3.10.0/activemq/commands/BaseDataStructure.h \
+  /usr/local/include/activemq-cpp-3.10.0/activemq/commands/BooleanExpression.h \
+  /usr/local/include/activemq-cpp-3.10.0/activemq/commands/BrokerError.h \
+  /usr/local/include/activemq-cpp-3.10.0/activemq/commands/BrokerId.h \
+  /usr/local/include/activemq-cpp-3.10.0/activemq/commands/Command.h \
+  /usr/local/include/activemq-cpp-3.10.0/activemq/commands/ConnectionId.h \
+  /usr/local/include/activemq-cpp-3.10.0/activemq/commands/ConnectionInfo.h \
+  /usr/local/include/activemq-cpp-3.10.0/activemq/commands/ConsumerId.h \
+  /usr/local/include/activemq-cpp-3.10.0/activemq/commands/ConsumerInfo.h \
+  /usr/local/include/activemq-cpp-3.10.0/activemq/commands/DataStructure.h \
+  /usr/local/include/activemq-cpp-3.10.0/activemq/commands/LocalTransactionId.h \
+  /usr/local/include/activemq-cpp-3.10.0/activemq/commands/Message.h \
+  /usr/local/include/activemq-cpp-3.10.0/activemq/commands/MessageAck.h \
+  /usr/local/include/activemq-cpp-3.10.0/activemq/commands/MessageDispatch.h \
+  /usr/local/include/activemq-cpp-3.10.0/activemq/commands/MessageId.h \
+  /usr/local/include/activemq-cpp-3.10.0/activemq/commands/ProducerAck.h \
+  /usr/local/include/activemq-cpp-3.10.0/activemq/commands/ProducerId.h \
+  /usr/local/include/activemq-cpp-3.10.0/activemq/commands/ProducerInfo.h \
+  /usr/local/include/activemq-cpp-3.10.0/activemq/commands/RemoveInfo.h \
+  /usr/local/include/activemq-cpp-3.10.0/activemq/commands/Response.h \
+  /usr/local/include/activemq-cpp-3.10.0/activemq/commands/SessionId.h \
+  /usr/local/include/activemq-cpp-3.10.0/activemq/commands/SessionInfo.h \
+  /usr/local/include/activemq-cpp-3.10.0/activemq/commands/TransactionId.h \
+  /usr/local/include/activemq-cpp-3.10.0/activemq/core/ActiveMQAckHandler.h \
+  /usr/local/include/activemq-cpp-3.10.0/activemq/core/ActiveMQConnection.h \
+  /usr/local/include/activemq-cpp-3.10.0/activemq/core/ActiveMQConnectionFactory.h \
+  /usr/local/include/activemq-cpp-3.10.0/activemq/core/ActiveMQConsumer.h \
+  /usr/local/include/activemq-cpp-3.10.0/activemq/core/ActiveMQProducer.h \
+  /usr/local/include/activemq-cpp-3.10.0/activemq/core/ActiveMQSession.h \
+  /usr/local/include/activemq-cpp-3.10.0/activemq/core/ActiveMQTransactionContext.h \
+  /usr/local/include/activemq-cpp-3.10.0/activemq/core/Dispatcher.h \
+  /usr/local/include/activemq-cpp-3.10.0/activemq/core/MessageDispatchChannel.h \
+  /usr/local/include/activemq-cpp-3.10.0/activemq/core/RedeliveryPolicy.h \
+  /usr/local/include/activemq-cpp-3.10.0/activemq/core/Synchronization.h \
+  /usr/local/include/activemq-cpp-3.10.0/activemq/core/kernels/ActiveMQConsumerKernel.h \
+  /usr/local/include/activemq-cpp-3.10.0/activemq/core/kernels/ActiveMQProducerKernel.h \
+  /usr/local/include/activemq-cpp-3.10.0/activemq/core/kernels/ActiveMQSessionKernel.h \
+  /usr/local/include/activemq-cpp-3.10.0/activemq/exceptions/ActiveMQException.h \
+  /usr/local/include/activemq-cpp-3.10.0/activemq/exceptions/ExceptionDefines.h \
+  /usr/local/include/activemq-cpp-3.10.0/activemq/library/ActiveMQCPP.h \
+  /usr/local/include/activemq-cpp-3.10.0/activemq/threads/Scheduler.h \
+  /usr/local/include/activemq-cpp-3.10.0/activemq/transport/FutureResponse.h \
+  /usr/local/include/activemq-cpp-3.10.0/activemq/transport/ResponseCallback.h \
+  /usr/local/include/activemq-cpp-3.10.0/activemq/transport/Transport.h \
+  /usr/local/include/activemq-cpp-3.10.0/activemq/transport/TransportListener.h \
+  /usr/local/include/activemq-cpp-3.10.0/activemq/util/ActiveMQProperties.h \
+  /usr/local/include/activemq-cpp-3.10.0/activemq/util/Config.h \
+  /usr/local/include/activemq-cpp-3.10.0/activemq/util/LongSequenceGenerator.h \
+  /usr/local/include/activemq-cpp-3.10.0/activemq/util/MemoryUsage.h \
+  /usr/local/include/activemq-cpp-3.10.0/activemq/util/PrimitiveMap.h \
+  /usr/local/include/activemq-cpp-3.10.0/activemq/util/PrimitiveValueConverter.h \
+  /usr/local/include/activemq-cpp-3.10.0/activemq/util/PrimitiveValueNode.h \
+  /usr/local/include/activemq-cpp-3.10.0/activemq/util/Service.h \
+  /usr/local/include/activemq-cpp-3.10.0/activemq/util/ServiceSupport.h \
+  /usr/local/include/activemq-cpp-3.10.0/activemq/util/Usage.h \
+  /usr/local/include/activemq-cpp-3.10.0/activemq/wireformat/MarshalAware.h \
+  /usr/local/include/activemq-cpp-3.10.0/cms/AsyncCallback.h \
+  /usr/local/include/activemq-cpp-3.10.0/cms/BytesMessage.h \
+  /usr/local/include/activemq-cpp-3.10.0/cms/CMSException.h \
+  /usr/local/include/activemq-cpp-3.10.0/cms/CMSProperties.h \
+  /usr/local/include/activemq-cpp-3.10.0/cms/Closeable.h \
+  /usr/local/include/activemq-cpp-3.10.0/cms/Config.h \
+  /usr/local/include/activemq-cpp-3.10.0/cms/Connection.h \
+  /usr/local/include/activemq-cpp-3.10.0/cms/ConnectionFactory.h \
+  /usr/local/include/activemq-cpp-3.10.0/cms/ConnectionMetaData.h \
+  /usr/local/include/activemq-cpp-3.10.0/cms/DeliveryMode.h \
+  /usr/local/include/activemq-cpp-3.10.0/cms/Destination.h \
+  /usr/local/include/activemq-cpp-3.10.0/cms/DestinationEvent.h \
+  /usr/local/include/activemq-cpp-3.10.0/cms/DestinationListener.h \
+  /usr/local/include/activemq-cpp-3.10.0/cms/DestinationSource.h \
+  /usr/local/include/activemq-cpp-3.10.0/cms/EnhancedConnection.h \
+  /usr/local/include/activemq-cpp-3.10.0/cms/ExceptionListener.h \
+  /usr/local/include/activemq-cpp-3.10.0/cms/IllegalStateException.h \
+  /usr/local/include/activemq-cpp-3.10.0/cms/InvalidDestinationException.h \
+  /usr/local/include/activemq-cpp-3.10.0/cms/MapMessage.h \
+  /usr/local/include/activemq-cpp-3.10.0/cms/Message.h \
+  /usr/local/include/activemq-cpp-3.10.0/cms/MessageAvailableListener.h \
+  /usr/local/include/activemq-cpp-3.10.0/cms/MessageConsumer.h \
+  /usr/local/include/activemq-cpp-3.10.0/cms/MessageEOFException.h \
+  /usr/local/include/activemq-cpp-3.10.0/cms/MessageEnumeration.h \
+  /usr/local/include/activemq-cpp-3.10.0/cms/MessageFormatException.h \
+  /usr/local/include/activemq-cpp-3.10.0/cms/MessageListener.h \
+  /usr/local/include/activemq-cpp-3.10.0/cms/MessageNotReadableException.h \
+  /usr/local/include/activemq-cpp-3.10.0/cms/MessageNotWriteableException.h \
+  /usr/local/include/activemq-cpp-3.10.0/cms/MessageProducer.h \
+  /usr/local/include/activemq-cpp-3.10.0/cms/MessageTransformer.h \
+  /usr/local/include/activemq-cpp-3.10.0/cms/Queue.h \
+  /usr/local/include/activemq-cpp-3.10.0/cms/QueueBrowser.h \
+  /usr/local/include/activemq-cpp-3.10.0/cms/Session.h \
+  /usr/local/include/activemq-cpp-3.10.0/cms/Startable.h \
+  /usr/local/include/activemq-cpp-3.10.0/cms/Stoppable.h \
+  /usr/local/include/activemq-cpp-3.10.0/cms/StreamMessage.h \
+  /usr/local/include/activemq-cpp-3.10.0/cms/TemporaryQueue.h \
+  /usr/local/include/activemq-cpp-3.10.0/cms/TemporaryTopic.h \
+  /usr/local/include/activemq-cpp-3.10.0/cms/TextMessage.h \
+  /usr/local/include/activemq-cpp-3.10.0/cms/Topic.h \
+  /usr/local/include/activemq-cpp-3.10.0/cms/UnsupportedOperationException.h \
+  /usr/local/include/activemq-cpp-3.10.0/cms/XAException.h \
+  /usr/local/include/activemq-cpp-3.10.0/cms/XAResource.h \
+  /usr/local/include/activemq-cpp-3.10.0/cms/Xid.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/internal/AprPool.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/internal/net/URIType.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/io/Closeable.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/io/Flushable.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/io/IOException.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/io/InputStream.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/io/InterruptedIOException.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/io/OutputStream.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/lang/ArrayPointer.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/lang/CharSequence.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/lang/Comparable.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/lang/Exception.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/lang/Integer.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/lang/Iterable.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/lang/Number.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/lang/Pointer.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/lang/Runnable.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/lang/String.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/lang/System.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/lang/Thread.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/lang/Throwable.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/lang/exceptions/ClassCastException.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/lang/exceptions/ExceptionDefines.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/lang/exceptions/IllegalArgumentException.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/lang/exceptions/IllegalMonitorStateException.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/lang/exceptions/IllegalStateException.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/lang/exceptions/IllegalThreadStateException.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/lang/exceptions/IndexOutOfBoundsException.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/lang/exceptions/InterruptedException.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/lang/exceptions/InvalidStateException.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/lang/exceptions/NullPointerException.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/lang/exceptions/NumberFormatException.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/lang/exceptions/RuntimeException.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/lang/exceptions/UnsupportedOperationException.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/net/MalformedURLException.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/net/URI.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/net/URISyntaxException.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/util/AbstractCollection.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/util/AbstractList.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/util/AbstractSet.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/util/ArrayList.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/util/Arrays.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/util/Collection.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/util/Comparator.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/util/ConcurrentModificationException.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/util/Config.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/util/Date.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/util/Iterator.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/util/List.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/util/ListIterator.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/util/Map.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/util/MapEntry.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/util/NoSuchElementException.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/util/Properties.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/util/Set.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/util/StlMap.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/util/StlSet.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/util/Timer.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/util/comparators/Less.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/util/concurrent/Callable.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/util/concurrent/CancellationException.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/util/concurrent/Concurrent.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/util/concurrent/CountDownLatch.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/util/concurrent/ExecutionException.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/util/concurrent/Executor.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/util/concurrent/ExecutorService.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/util/concurrent/Future.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/util/concurrent/FutureTask.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/util/concurrent/Lock.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/util/concurrent/Mutex.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/util/concurrent/RejectedExecutionException.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/util/concurrent/RunnableFuture.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/util/concurrent/Synchronizable.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/util/concurrent/TimeUnit.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/util/concurrent/TimeoutException.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/util/concurrent/atomic/AtomicBoolean.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/util/concurrent/atomic/AtomicInteger.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/util/concurrent/atomic/AtomicRefCounter.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/util/concurrent/locks/AbstractOwnableSynchronizer.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/util/concurrent/locks/AbstractQueuedSynchronizer.h \
+  /usr/local/include/activemq-cpp-3.10.0/decaf/util/concurrent/locks/Condition.h \
+  /usr/local/include/log4cpp/Appender.hh \
+  /usr/local/include/log4cpp/Category.hh \
+  /usr/local/include/log4cpp/CategoryStream.hh \
+  /usr/local/include/log4cpp/Configurator.hh \
+  /usr/local/include/log4cpp/Export.hh \
+  /usr/local/include/log4cpp/Layout.hh \
+  /usr/local/include/log4cpp/LoggingEvent.hh \
+  /usr/local/include/log4cpp/Manipulator.hh \
+  /usr/local/include/log4cpp/Portability.hh \
+  /usr/local/include/log4cpp/Priority.hh \
+  /usr/local/include/log4cpp/PropertyConfigurator.hh \
+  /usr/local/include/log4cpp/TimeStamp.hh \
+  /usr/local/include/log4cpp/config.h \
+  /usr/local/include/log4cpp/convenience.h \
+  /usr/local/include/log4cpp/threading/PThreads.hh \
+  /usr/local/include/log4cpp/threading/Threading.hh
 
 
-/usr/local/include/activemq-cpp-3.9.5/decaf/util/concurrent/Mutex.h:
+/usr/local/include/log4cpp/threading/Threading.hh:
 
-/usr/local/include/activemq-cpp-3.9.5/decaf/util/concurrent/CountDownLatch.h:
+/usr/local/include/log4cpp/threading/PThreads.hh:
 
-/usr/local/include/activemq-cpp-3.9.5/decaf/util/StlMap.h:
+/usr/local/include/log4cpp/Portability.hh:
 
-/usr/local/include/activemq-cpp-3.9.5/decaf/util/Set.h:
+/usr/local/include/log4cpp/Manipulator.hh:
 
-/usr/local/include/activemq-cpp-3.9.5/decaf/util/Properties.h:
+/usr/local/include/log4cpp/LoggingEvent.hh:
 
-/usr/local/include/activemq-cpp-3.9.5/decaf/util/MapEntry.h:
+/usr/local/include/log4cpp/Layout.hh:
 
-/usr/local/include/activemq-cpp-3.9.5/decaf/util/Map.h:
+/usr/local/include/log4cpp/Configurator.hh:
 
-/usr/local/include/activemq-cpp-3.9.5/decaf/util/ListIterator.h:
+/usr/local/include/log4cpp/CategoryStream.hh:
 
-/usr/local/include/activemq-cpp-3.9.5/decaf/util/List.h:
+/usr/local/include/log4cpp/Category.hh:
 
-/usr/local/include/activemq-cpp-3.9.5/decaf/util/ConcurrentModificationException.h:
+/usr/local/include/log4cpp/Appender.hh:
 
-/usr/local/include/activemq-cpp-3.9.5/decaf/net/URISyntaxException.h:
+/usr/local/include/activemq-cpp-3.10.0/decaf/util/concurrent/locks/Condition.h:
 
-/usr/local/include/activemq-cpp-3.9.5/decaf/net/URI.h:
+/usr/local/include/activemq-cpp-3.10.0/decaf/util/concurrent/locks/AbstractOwnableSynchronizer.h:
 
-/usr/local/include/activemq-cpp-3.9.5/decaf/net/MalformedURLException.h:
+/usr/local/include/activemq-cpp-3.10.0/decaf/util/concurrent/atomic/AtomicBoolean.h:
 
-/usr/local/include/activemq-cpp-3.9.5/decaf/lang/exceptions/UnsupportedOperationException.h:
+/usr/local/include/activemq-cpp-3.10.0/decaf/util/concurrent/TimeoutException.h:
 
-/usr/local/include/activemq-cpp-3.9.5/decaf/lang/exceptions/NullPointerException.h:
+/usr/local/include/activemq-cpp-3.10.0/decaf/util/concurrent/TimeUnit.h:
 
-/usr/local/include/activemq-cpp-3.9.5/decaf/lang/exceptions/IndexOutOfBoundsException.h:
+/usr/local/include/activemq-cpp-3.10.0/decaf/util/concurrent/RunnableFuture.h:
 
-/usr/local/include/activemq-cpp-3.9.5/decaf/lang/exceptions/IllegalStateException.h:
+/usr/local/include/activemq-cpp-3.10.0/decaf/util/concurrent/Mutex.h:
 
-/usr/local/include/activemq-cpp-3.9.5/decaf/lang/exceptions/IllegalArgumentException.h:
+/usr/local/include/activemq-cpp-3.10.0/decaf/util/concurrent/Future.h:
 
-/usr/local/include/activemq-cpp-3.9.5/decaf/lang/exceptions/ExceptionDefines.h:
+/usr/local/include/activemq-cpp-3.10.0/decaf/util/concurrent/ExecutionException.h:
 
-/usr/local/include/activemq-cpp-3.9.5/decaf/util/concurrent/Concurrent.h:
+/usr/local/include/activemq-cpp-3.10.0/decaf/util/concurrent/Concurrent.h:
 
-/usr/local/include/activemq-cpp-3.9.5/decaf/lang/Thread.h:
+/usr/local/include/activemq-cpp-3.10.0/decaf/util/concurrent/CancellationException.h:
 
-/usr/local/include/activemq-cpp-3.9.5/decaf/lang/Pointer.h:
+/usr/local/include/activemq-cpp-3.10.0/decaf/util/comparators/Less.h:
 
-/usr/local/include/activemq-cpp-3.9.5/decaf/lang/Comparable.h:
+/usr/local/include/activemq-cpp-3.10.0/decaf/util/StlMap.h:
 
-/usr/local/include/activemq-cpp-3.9.5/decaf/io/InterruptedIOException.h:
+/usr/local/include/activemq-cpp-3.10.0/decaf/util/NoSuchElementException.h:
 
-/usr/local/include/activemq-cpp-3.9.5/decaf/io/InputStream.h:
+/usr/local/include/activemq-cpp-3.10.0/decaf/util/Config.h:
 
-/usr/local/include/activemq-cpp-3.9.5/decaf/io/IOException.h:
+/usr/local/include/log4cpp/Priority.hh:
 
-/usr/local/include/activemq-cpp-3.9.5/decaf/io/Flushable.h:
+/usr/local/include/activemq-cpp-3.10.0/decaf/util/Comparator.h:
 
-/usr/local/include/activemq-cpp-3.9.5/decaf/io/Closeable.h:
+/usr/local/include/activemq-cpp-3.10.0/decaf/util/AbstractList.h:
 
-/usr/local/include/activemq-cpp-3.9.5/decaf/internal/net/URIType.h:
+/usr/local/include/activemq-cpp-3.10.0/decaf/util/AbstractCollection.h:
 
-/usr/local/include/activemq-cpp-3.9.5/cms/UnsupportedOperationException.h:
+/usr/local/include/activemq-cpp-3.10.0/decaf/net/URISyntaxException.h:
 
-/usr/local/include/activemq-cpp-3.9.5/cms/Topic.h:
+/usr/local/include/activemq-cpp-3.10.0/decaf/net/MalformedURLException.h:
 
-/usr/local/include/activemq-cpp-3.9.5/cms/TextMessage.h:
+/usr/local/include/activemq-cpp-3.10.0/decaf/lang/exceptions/UnsupportedOperationException.h:
 
-/usr/local/include/activemq-cpp-3.9.5/decaf/io/OutputStream.h:
+/usr/local/include/activemq-cpp-3.10.0/decaf/lang/exceptions/NumberFormatException.h:
 
-/usr/local/include/activemq-cpp-3.9.5/cms/StreamMessage.h:
+/usr/local/include/activemq-cpp-3.10.0/decaf/lang/exceptions/InterruptedException.h:
 
-/usr/local/include/activemq-cpp-3.9.5/cms/Stoppable.h:
+/usr/local/include/activemq-cpp-3.10.0/decaf/lang/exceptions/IndexOutOfBoundsException.h:
 
-/usr/local/include/activemq-cpp-3.9.5/cms/Startable.h:
+/usr/local/include/activemq-cpp-3.10.0/decaf/lang/exceptions/IllegalThreadStateException.h:
 
-/usr/local/include/activemq-cpp-3.9.5/cms/QueueBrowser.h:
+/usr/local/include/activemq-cpp-3.10.0/decaf/lang/exceptions/IllegalStateException.h:
 
-/usr/include/pthread.h:
+/usr/local/include/activemq-cpp-3.10.0/decaf/lang/exceptions/IllegalMonitorStateException.h:
 
-/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
+/usr/local/include/activemq-cpp-3.10.0/decaf/lang/exceptions/ExceptionDefines.h:
 
-/usr/include/c++/13/typeinfo:
+/usr/local/include/activemq-cpp-3.10.0/decaf/lang/exceptions/ClassCastException.h:
 
-/usr/include/c++/13/bits/cxxabi_init_exception.h:
+/usr/local/include/activemq-cpp-3.10.0/decaf/lang/Runnable.h:
 
-/usr/include/c++/13/system_error:
+/usr/local/include/activemq-cpp-3.10.0/decaf/lang/Pointer.h:
 
-/usr/include/c++/13/bits/range_access.h:
+/usr/local/include/activemq-cpp-3.10.0/decaf/lang/Integer.h:
 
-/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
+/usr/local/include/activemq-cpp-3.10.0/decaf/lang/Comparable.h:
 
-/usr/include/c++/13/bits/streambuf_iterator.h:
+/usr/local/include/activemq-cpp-3.10.0/decaf/io/InterruptedIOException.h:
+
+/usr/local/include/activemq-cpp-3.10.0/decaf/io/Flushable.h:
+
+/usr/local/include/activemq-cpp-3.10.0/decaf/io/Closeable.h:
+
+/usr/local/include/activemq-cpp-3.10.0/cms/XAException.h:
+
+/usr/local/include/activemq-cpp-3.10.0/cms/UnsupportedOperationException.h:
+
+/usr/local/include/activemq-cpp-3.10.0/cms/TextMessage.h:
+
+/usr/local/include/activemq-cpp-3.10.0/decaf/util/concurrent/Lock.h:
+
+/usr/local/include/activemq-cpp-3.10.0/cms/TemporaryTopic.h:
+
+/usr/local/include/activemq-cpp-3.10.0/decaf/lang/Exception.h:
+
+/usr/local/include/activemq-cpp-3.10.0/cms/StreamMessage.h:
+
+/usr/local/include/activemq-cpp-3.10.0/cms/Stoppable.h:
+
+/usr/local/include/activemq-cpp-3.10.0/cms/Startable.h:
+
+/usr/local/include/activemq-cpp-3.10.0/decaf/util/concurrent/FutureTask.h:
+
+/usr/local/include/activemq-cpp-3.10.0/cms/Session.h:
+
+/usr/local/include/activemq-cpp-3.10.0/decaf/lang/exceptions/IllegalArgumentException.h:
+
+/usr/local/include/activemq-cpp-3.10.0/cms/QueueBrowser.h:
+
+/usr/local/include/activemq-cpp-3.10.0/decaf/util/ListIterator.h:
+
+/usr/local/include/activemq-cpp-3.10.0/cms/MessageProducer.h:
+
+/usr/local/include/activemq-cpp-3.10.0/cms/MessageNotWriteableException.h:
+
+/usr/local/include/activemq-cpp-3.10.0/cms/MessageEOFException.h:
+
+/usr/local/include/activemq-cpp-3.10.0/cms/MessageConsumer.h:
+
+/usr/local/include/activemq-cpp-3.10.0/cms/MessageAvailableListener.h:
+
+/usr/local/include/activemq-cpp-3.10.0/cms/MapMessage.h:
+
+/usr/local/include/activemq-cpp-3.10.0/decaf/util/Iterator.h:
+
+/usr/local/include/activemq-cpp-3.10.0/cms/IllegalStateException.h:
+
+/usr/local/include/activemq-cpp-3.10.0/cms/DestinationListener.h:
+
+/usr/local/include/activemq-cpp-3.10.0/cms/DeliveryMode.h:
+
+/usr/local/include/activemq-cpp-3.10.0/cms/ConnectionFactory.h:
+
+/usr/local/include/activemq-cpp-3.10.0/cms/Config.h:
+
+/usr/local/include/activemq-cpp-3.10.0/cms/CMSException.h:
+
+/usr/local/include/activemq-cpp-3.10.0/activemq/wireformat/MarshalAware.h:
+
+/usr/local/include/activemq-cpp-3.10.0/activemq/util/ServiceSupport.h:
+
+/usr/local/include/activemq-cpp-3.10.0/decaf/util/concurrent/RejectedExecutionException.h:
+
+/usr/local/include/activemq-cpp-3.10.0/decaf/util/ConcurrentModificationException.h:
+
+/usr/local/include/activemq-cpp-3.10.0/activemq/util/LongSequenceGenerator.h:
+
+/usr/local/include/activemq-cpp-3.10.0/decaf/lang/Iterable.h:
+
+/usr/local/include/activemq-cpp-3.10.0/activemq/util/Config.h:
+
+/usr/local/include/activemq-cpp-3.10.0/activemq/util/ActiveMQProperties.h:
+
+/usr/local/include/activemq-cpp-3.10.0/activemq/transport/TransportListener.h:
+
+/usr/local/include/activemq-cpp-3.10.0/activemq/transport/Transport.h:
+
+/usr/local/include/activemq-cpp-3.10.0/cms/CMSProperties.h:
+
+/usr/local/include/activemq-cpp-3.10.0/activemq/core/kernels/ActiveMQSessionKernel.h:
+
+/usr/local/include/activemq-cpp-3.10.0/activemq/core/kernels/ActiveMQProducerKernel.h:
+
+/usr/local/include/activemq-cpp-3.10.0/activemq/core/kernels/ActiveMQConsumerKernel.h:
+
+/usr/local/include/activemq-cpp-3.10.0/activemq/core/MessageDispatchChannel.h:
+
+/usr/local/include/activemq-cpp-3.10.0/cms/MessageNotReadableException.h:
+
+/usr/local/include/activemq-cpp-3.10.0/activemq/core/ActiveMQTransactionContext.h:
+
+/usr/local/include/activemq-cpp-3.10.0/activemq/core/ActiveMQSession.h:
+
+/usr/local/include/activemq-cpp-3.10.0/activemq/core/ActiveMQConsumer.h:
+
+/usr/local/include/activemq-cpp-3.10.0/activemq/core/ActiveMQConnection.h:
+
+/usr/local/include/activemq-cpp-3.10.0/decaf/util/concurrent/CountDownLatch.h:
+
+/usr/local/include/activemq-cpp-3.10.0/activemq/core/ActiveMQAckHandler.h:
+
+/usr/local/include/activemq-cpp-3.10.0/activemq/commands/TransactionId.h:
+
+/usr/local/include/activemq-cpp-3.10.0/activemq/commands/Response.h:
+
+/usr/local/include/activemq-cpp-3.10.0/activemq/commands/ProducerAck.h:
+
+/usr/local/include/activemq-cpp-3.10.0/activemq/commands/MessageDispatch.h:
+
+/usr/local/include/activemq-cpp-3.10.0/activemq/commands/MessageAck.h:
+
+/usr/local/include/activemq-cpp-3.10.0/activemq/commands/LocalTransactionId.h:
+
+/usr/local/include/log4cpp/TimeStamp.hh:
+
+/usr/local/include/activemq-cpp-3.10.0/activemq/core/RedeliveryPolicy.h:
+
+/usr/local/include/activemq-cpp-3.10.0/activemq/commands/DataStructure.h:
+
+/usr/local/include/activemq-cpp-3.10.0/activemq/commands/ConnectionId.h:
+
+/usr/local/include/activemq-cpp-3.10.0/decaf/net/URI.h:
+
+/usr/local/include/activemq-cpp-3.10.0/activemq/commands/BaseDataStructure.h:
+
+/usr/local/include/activemq-cpp-3.10.0/activemq/commands/BaseCommand.h:
+
+/usr/local/include/activemq-cpp-3.10.0/activemq/commands/ActiveMQTempDestination.h:
+
+/usr/local/include/activemq-cpp-3.10.0/activemq/commands/ActiveMQDestination.h:
+
+/usr/local/include/activemq-cpp-3.10.0/activemq/threads/Scheduler.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h:
+
+/usr/include/x86_64-linux-gnu/sys/ucontext.h:
+
+/usr/local/include/activemq-cpp-3.10.0/cms/XAResource.h:
+
+/usr/include/x86_64-linux-gnu/sys/types.h:
+
+/usr/include/x86_64-linux-gnu/sys/stat.h:
+
+/usr/include/x86_64-linux-gnu/sys/single_threaded.h:
+
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs.h:
+
+/usr/local/include/activemq-cpp-3.10.0/decaf/io/InputStream.h:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/gthr.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h:
+
+/usr/local/include/activemq-cpp-3.10.0/activemq/util/Service.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h:
+
+/usr/local/include/activemq-cpp-3.10.0/decaf/util/ArrayList.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h:
+
+/usr/local/include/activemq-cpp-3.10.0/decaf/lang/System.h:
+
+/usr/local/include/activemq-cpp-3.10.0/decaf/lang/ArrayPointer.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h:
+
+/usr/local/include/activemq-cpp-3.10.0/activemq/commands/BooleanExpression.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h:
+
+/usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h:
+
+/usr/include/x86_64-linux-gnu/bits/wordsize.h:
+
+/usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
+
+/usr/include/x86_64-linux-gnu/bits/wchar.h:
+
+/usr/include/x86_64-linux-gnu/bits/waitflags.h:
+
+/usr/local/include/activemq-cpp-3.10.0/activemq/library/ActiveMQCPP.h:
+
+/usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
+
+/usr/include/x86_64-linux-gnu/bits/uio_lim.h:
+
+/usr/local/include/activemq-cpp-3.10.0/decaf/util/List.h:
+
+/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
+
+/usr/local/include/activemq-cpp-3.10.0/activemq/commands/Command.h:
+
+/usr/include/x86_64-linux-gnu/bits/typesizes.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_statx.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
 
 /usr/include/c++/13/map:
 
@@ -419,59 +824,55 @@ CMakeFiles/uci.dir/main.cpp.o: main.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
 
-/usr/include/features-time64.h:
-
-/usr/include/c++/13/istream:
-
-/usr/include/c++/13/initializer_list:
-
 /usr/include/c++/13/functional:
 
 /usr/include/c++/13/iostream:
 
 /usr/include/c++/13/ext/type_traits.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
+/usr/local/include/activemq-cpp-3.10.0/decaf/lang/exceptions/RuntimeException.h:
 
 /usr/include/c++/13/ext/concurrence.h:
 
+/usr/include/linux/falloc.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
+
+/usr/include/c++/13/ext/atomicity.h:
+
 /usr/include/c++/13/cctype:
 
-/usr/include/errno.h:
-
-/usr/include/c++/13/bits/functional_hash.h:
-
-/usr/local/include/activemq-cpp-3.9.5/activemq/util/Service.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h:
-
-/usr/local/include/activemq-cpp-3.9.5/cms/AsyncCallback.h:
-
-/usr/local/include/activemq-cpp-3.9.5/cms/Session.h:
+/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
 
 /usr/include/c++/13/debug/assertions.h:
 
-/usr/local/include/activemq-cpp-3.9.5/cms/Queue.h:
-
 /usr/include/c++/13/cstdio:
+
+/usr/local/include/log4cpp/convenience.h:
+
+/usr/local/include/activemq-cpp-3.10.0/cms/MessageListener.h:
+
+/usr/include/x86_64-linux-gnu/bits/sigevent-consts.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
 
-/usr/include/c++/13/clocale:
+/usr/local/include/activemq-cpp-3.10.0/activemq/util/PrimitiveMap.h:
 
-/usr/local/include/activemq-cpp-3.9.5/decaf/util/AbstractSet.h:
+/usr/include/c++/13/clocale:
 
 /usr/include/c++/13/cerrno:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-least.h:
 
-/usr/local/include/activemq-cpp-3.9.5/cms/MessageNotReadableException.h:
-
 /usr/include/c++/13/bits/vector.tcc:
 
-/usr/local/include/activemq-cpp-3.9.5/decaf/util/Iterator.h:
-
 /usr/include/c++/13/bits/stl_function.h:
+
+/usr/local/include/activemq-cpp-3.10.0/activemq/commands/Message.h:
+
+/usr/include/x86_64-linux-gnu/bits/fcntl.h:
+
+/usr/local/include/activemq-cpp-3.10.0/cms/DestinationEvent.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
 
@@ -479,35 +880,45 @@ CMakeFiles/uci.dir/main.cpp.o: main.cpp \
 
 /usr/include/c++/13/bits/align.h:
 
-/usr/include/x86_64-linux-gnu/bits/waitflags.h:
+/usr/include/c++/13/bits/streambuf.tcc:
 
 /usr/include/c++/13/memory:
 
-/usr/local/include/activemq-cpp-3.9.5/decaf/lang/exceptions/ClassCastException.h:
-
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h:
-
-/usr/local/include/activemq-cpp-3.9.5/cms/ExceptionListener.h:
-
-/usr/include/c++/13/bits/stl_map.h:
-
 /usr/include/c++/13/bits/stl_tree.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h:
+
+/usr/include/x86_64-linux-gnu/bits/siginfo-consts.h:
+
+/usr/include/x86_64-linux-gnu/bits/sigstksz.h:
+
+/usr/include/x86_64-linux-gnu/bits/stat.h:
+
+/usr/local/include/activemq-cpp-3.10.0/decaf/util/concurrent/Synchronizable.h:
+
+/usr/include/x86_64-linux-gnu/sys/socket.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h:
 
 /usr/include/c++/13/bits/stl_vector.h:
 
 /usr/include/c++/13/bits/stl_tempbuf.h:
 
-/usr/local/include/activemq-cpp-3.9.5/activemq/wireformat/MarshalAware.h:
+/usr/local/include/activemq-cpp-3.10.0/activemq/exceptions/ActiveMQException.h:
 
-/usr/local/include/activemq-cpp-3.9.5/decaf/util/concurrent/TimeUnit.h:
+/usr/include/x86_64-linux-gnu/bits/sigaction.h:
 
-/usr/local/include/activemq-cpp-3.9.5/decaf/util/concurrent/Synchronizable.h:
+/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
 
-/usr/local/include/activemq-cpp-3.9.5/activemq/transport/FutureResponse.h:
+/usr/include/asm-generic/errno.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
+
+/usr/include/c++/13/ext/numeric_traits.h:
+
+/usr/include/c++/13/bits/stl_iterator.h:
 
 /usr/include/c++/13/bits/functexcept.h:
 
@@ -515,17 +926,13 @@ CMakeFiles/uci.dir/main.cpp.o: main.cpp \
 
 /usr/include/c++/13/new:
 
+/usr/local/include/activemq-cpp-3.10.0/activemq/commands/BrokerId.h:
+
 /usr/include/c++/13/ext/alloc_traits.h:
 
-/usr/local/include/activemq-cpp-3.9.5/cms/MessageConsumer.h:
-
-/usr/local/include/activemq-cpp-3.9.5/decaf/lang/Runnable.h:
+/usr/include/inttypes.h:
 
 /usr/include/c++/13/bits/stl_heap.h:
-
-/usr/local/include/activemq-cpp-3.9.5/decaf/lang/Exception.h:
-
-/usr/include/c++/13/bits/stl_construct.h:
 
 /usr/include/c++/13/bits/stl_bvector.h:
 
@@ -533,303 +940,557 @@ CMakeFiles/uci.dir/main.cpp.o: main.cpp \
 
 /usr/include/c++/13/bits/stl_algobase.h:
 
-/usr/local/include/activemq-cpp-3.9.5/activemq/commands/BaseCommand.h:
+/usr/include/c++/13/exception:
 
-/usr/include/c++/13/bits/exception.h:
+/usr/local/include/activemq-cpp-3.10.0/activemq/util/PrimitiveValueNode.h:
 
-/usr/include/c++/13/streambuf:
+/usr/include/c++/13/bits/uses_allocator.h:
 
-/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
+/usr/include/c++/13/bits/std_abs.h:
 
-/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
+/usr/include/c++/13/bits/postypes.h:
 
-/usr/local/include/activemq-cpp-3.9.5/activemq/commands/DataStructure.h:
+/usr/include/c++/13/bits/stl_multiset.h:
 
-/usr/include/c++/13/vector:
-
-/usr/include/c++/13/bits/erase_if.h:
-
-/usr/include/c++/13/bits/shared_ptr_atomic.h:
-
-/usr/local/include/activemq-cpp-3.9.5/cms/MessageEnumeration.h:
-
-/usr/include/c++/13/bits/cxxabi_forced.h:
-
-/usr/include/c++/13/bits/cpp_type_traits.h:
-
-/usr/include/c++/13/string:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
-
-/usr/include/x86_64-linux-gnu/bits/types.h:
-
-/usr/include/c++/13/bits/move.h:
-
-/usr/include/c++/13/bits/basic_string.h:
-
-/usr/include/x86_64-linux-gnu/bits/endianness.h:
-
-/usr/local/include/activemq-cpp-3.9.5/activemq/core/ActiveMQConnectionFactory.h:
-
-/usr/include/c++/13/bits/invoke.h:
-
-/usr/local/include/activemq-cpp-3.9.5/activemq/commands/BaseDataStructure.h:
-
-/usr/local/include/activemq-cpp-3.9.5/decaf/lang/Number.h:
-
-/usr/include/c++/13/bits/atomic_lockfree_defines.h:
-
-/usr/include/x86_64-linux-gnu/asm/errno.h:
-
-/usr/include/c++/13/ext/numeric_traits.h:
-
-/usr/include/c++/13/bits/stl_iterator.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
-
-/usr/local/include/activemq-cpp-3.9.5/cms/DeliveryMode.h:
-
-/usr/include/c++/13/bits/localefwd.h:
-
-/usr/include/c++/13/ext/string_conversions.h:
-
-main.cpp:
-
-/usr/include/x86_64-linux-gnu/bits/endian.h:
-
-/usr/include/x86_64-linux-gnu/gnu/stubs.h:
-
-/usr/include/c++/13/bits/predefined_ops.h:
-
-/usr/include/c++/13/iosfwd:
-
-/usr/include/c++/13/cwctype:
+/usr/include/c++/13/cstdlib:
 
 /usr/include/c++/13/bits/sstream.tcc:
 
-/usr/include/c++/13/bits/stl_uninitialized.h:
+/usr/local/include/activemq-cpp-3.10.0/decaf/util/Arrays.h:
 
-/usr/include/c++/13/bits/new_allocator.h:
+/usr/include/c++/13/bits/erase_if.h:
 
-/usr/include/c++/13/bits/atomic_base.h:
+/usr/local/include/activemq-cpp-3.10.0/cms/Message.h:
 
-/usr/include/alloca.h:
+/usr/local/include/activemq-cpp-3.10.0/cms/EnhancedConnection.h:
 
-/usr/include/c++/13/bits/basic_string.tcc:
+/usr/include/c++/13/bits/stringfwd.h:
 
-/usr/local/include/activemq-cpp-3.9.5/decaf/util/Collection.h:
+/usr/include/apr-1.0/apr_thread_mutex.h:
 
-/usr/include/c++/13/bits/allocated_ptr.h:
+/usr/include/c++/13/bits/shared_ptr.h:
 
-/usr/include/c++/13/bit:
+/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
 
-/usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h:
+/usr/local/include/activemq-cpp-3.10.0/activemq/core/Synchronization.h:
 
-/usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h:
+/usr/include/c++/13/bits/stl_set.h:
 
-/usr/local/include/activemq-cpp-3.9.5/decaf/lang/Throwable.h:
+/usr/include/c++/13/bits/ostream_insert.h:
 
-/usr/include/c++/13/bits/stl_raw_storage_iter.h:
+/usr/include/c++/13/backward/binders.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/error_t.h:
+/usr/include/apr-1.0/apr_pools.h:
 
-/usr/include/c++/13/algorithm:
+/usr/local/include/activemq-cpp-3.10.0/activemq/util/PrimitiveValueConverter.h:
 
-/usr/include/c++/13/bits/stl_iterator_base_funcs.h:
+/usr/include/c++/13/bits/range_access.h:
 
-/usr/include/asm-generic/errno-base.h:
+/usr/include/c++/13/system_error:
 
-/usr/include/c++/13/bits/hash_bytes.h:
+/usr/include/x86_64-linux-gnu/bits/sigcontext.h:
 
-/usr/local/include/activemq-cpp-3.9.5/cms/MessageFormatException.h:
+/usr/include/apr-1.0/apr_time.h:
 
-/usr/include/c++/13/bits/exception_ptr.h:
+/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
-/usr/include/c++/13/bits/istream.tcc:
-
-/usr/local/include/activemq-cpp-3.9.5/cms/Destination.h:
-
-/usr/include/locale.h:
+/usr/include/c++/13/bits/move.h:
 
 /usr/include/c++/13/ext/aligned_buffer.h:
+
+/usr/include/x86_64-linux-gnu/asm/bitsperlong.h:
+
+/usr/local/include/activemq-cpp-3.10.0/activemq/core/ActiveMQConnectionFactory.h:
 
 /usr/include/c++/13/bits/utility.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
 
-/usr/include/c++/13/bits/stringfwd.h:
-
-/usr/include/c++/13/bits/shared_ptr.h:
-
-/usr/local/include/activemq-cpp-3.9.5/decaf/util/concurrent/atomic/AtomicInteger.h:
-
-/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
-
-/usr/include/c++/13/backward/auto_ptr.h:
-
-/usr/include/c++/13/backward/binders.h:
-
-/usr/include/features.h:
-
-/usr/include/c++/13/bits/locale_facets.tcc:
-
-/usr/include/c++/13/tuple:
-
-/usr/include/c++/13/bits/nested_exception.h:
-
-/usr/include/c++/13/bits/basic_ios.tcc:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/gthr.h:
+/usr/include/c++/13/bits/alloc_traits.h:
 
 /usr/include/c++/13/bits/concept_check.h:
 
-/usr/include/c++/13/bits/alloc_traits.h:
+/usr/include/c++/13/ios:
 
-/usr/include/c++/13/type_traits:
+/usr/include/c++/13/bits/predefined_ops.h:
 
-/usr/include/x86_64-linux-gnu/bits/long-double.h:
+/usr/include/c++/13/bits/stl_construct.h:
+
+/usr/include/asm-generic/posix_types.h:
+
+/usr/local/include/activemq-cpp-3.10.0/cms/InvalidDestinationException.h:
+
+/usr/include/stdc-predef.h:
+
+/usr/local/include/log4cpp/Export.hh:
+
+/usr/include/c++/13/bits/stl_raw_storage_iter.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/error_t.h:
+
+/usr/local/include/activemq-cpp-3.10.0/decaf/util/Date.h:
+
+/usr/include/c++/13/algorithm:
+
+/usr/include/c++/13/istream:
+
+/usr/local/include/activemq-cpp-3.10.0/decaf/util/Properties.h:
+
+/usr/local/include/activemq-cpp-3.10.0/decaf/internal/AprPool.h:
+
+/usr/include/asm-generic/socket.h:
+
+/usr/local/include/activemq-cpp-3.10.0/activemq/exceptions/ExceptionDefines.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
+
+/usr/include/asm-generic/int-ll64.h:
+
+/usr/include/c++/13/bits/shared_ptr_atomic.h:
+
+/usr/include/c++/13/set:
+
+/usr/include/c++/13/bits/atomic_base.h:
+
+/usr/include/c++/13/bits/stl_uninitialized.h:
+
+/usr/include/c++/13/bits/new_allocator.h:
+
+/usr/local/include/activemq-cpp-3.10.0/decaf/util/Set.h:
+
+/usr/local/include/activemq-cpp-3.10.0/decaf/util/Map.h:
 
 /usr/include/c++/13/bits/algorithmfwd.h:
 
-/usr/include/c++/13/bits/streambuf.tcc:
+/usr/include/x86_64-linux-gnu/bits/long-double.h:
 
-/usr/local/include/activemq-cpp-3.9.5/cms/MapMessage.h:
+/usr/include/c++/13/ext/string_conversions.h:
 
-/usr/include/c++/13/ios:
+/usr/local/include/activemq-cpp-3.10.0/decaf/io/OutputStream.h:
+
+main.cpp:
+
+/usr/local/include/activemq-cpp-3.10.0/activemq/core/Dispatcher.h:
+
+/usr/include/x86_64-linux-gnu/bits/endian.h:
+
+/usr/include/c++/13/bits/memoryfwd.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
+
+/usr/include/asm-generic/bitsperlong.h:
+
+/usr/include/asm-generic/types.h:
+
+/usr/include/x86_64-linux-gnu/sys/wait.h:
+
+/usr/include/c++/13/bits/stl_iterator_base_funcs.h:
+
+/usr/include/asm-generic/errno-base.h:
+
+/usr/local/include/activemq-cpp-3.10.0/cms/MessageFormatException.h:
+
+/usr/local/include/activemq-cpp-3.10.0/cms/Destination.h:
+
+/usr/include/asm-generic/sockios.h:
+
+/usr/include/c++/13/cstdarg:
+
+/usr/include/assert.h:
+
+/usr/local/include/activemq-cpp-3.10.0/activemq/commands/ConnectionInfo.h:
+
+/usr/include/c++/13/backward/auto_ptr.h:
+
+/usr/include/c++/13/bits/basic_string.tcc:
+
+/usr/include/c++/13/bits/allocated_ptr.h:
+
+/usr/include/c++/13/bit:
+
+/usr/local/include/activemq-cpp-3.10.0/decaf/lang/exceptions/NullPointerException.h:
+
+/usr/include/alloca.h:
+
+/usr/local/include/activemq-cpp-3.10.0/decaf/lang/exceptions/InvalidStateException.h:
 
 /usr/include/c++/13/bits/stl_algo.h:
 
-/usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h:
+/usr/include/locale.h:
+
+/usr/include/apr-1.0/apr_want.h:
 
 /usr/include/c++/13/bits/ostream.tcc:
 
-/usr/local/include/activemq-cpp-3.9.5/cms/BytesMessage.h:
+/usr/include/apr-1.0/apr.h:
+
+/usr/include/c++/13/bits/basic_ios.h:
+
+/usr/include/x86_64-linux-gnu/bits/time64.h:
+
+/usr/local/include/activemq-cpp-3.10.0/decaf/internal/net/URIType.h:
+
+/usr/include/c++/13/bits/hash_bytes.h:
+
+/usr/include/string.h:
+
+/usr/include/c++/13/bits/atomic_lockfree_defines.h:
+
+/usr/include/x86_64-linux-gnu/asm/errno.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
+
+/usr/include/apr-1.0/apr_general.h:
+
+/usr/include/c++/13/bits/locale_facets.h:
+
+/usr/local/include/activemq-cpp-3.10.0/decaf/lang/Number.h:
+
+/usr/local/include/activemq-cpp-3.10.0/cms/MessageEnumeration.h:
+
+/usr/include/c++/13/bits/basic_string.h:
+
+/usr/local/include/activemq-cpp-3.10.0/decaf/util/concurrent/ExecutorService.h:
+
+/usr/include/x86_64-linux-gnu/bits/endianness.h:
+
+/usr/local/include/activemq-cpp-3.10.0/activemq/commands/ProducerInfo.h:
+
+/usr/include/c++/13/bits/invoke.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h:
+
+/usr/include/x86_64-linux-gnu/bits/environments.h:
+
+/usr/include/c++/13/bits/istream.tcc:
+
+/usr/include/c++/13/bits/exception_ptr.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/ctype_inline.h:
+
+/usr/include/x86_64-linux-gnu/bits/signal_ext.h:
+
+/usr/include/c++/13/bits/std_function.h:
+
+/usr/include/apr-1.0/apr_allocator.h:
+
+/usr/include/c++/13/bits/char_traits.h:
+
+/usr/local/include/activemq-cpp-3.10.0/decaf/util/AbstractSet.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
 
-/usr/local/include/activemq-cpp-3.9.5/cms/Closeable.h:
+/usr/include/c++/13/bits/streambuf_iterator.h:
 
-/usr/include/ctype.h:
+/usr/include/c++/13/ostream:
+
+/usr/include/x86_64-linux-gnu/bits/confname.h:
+
+/usr/include/x86_64-linux-gnu/bits/siginfo-arch.h:
+
+/usr/local/include/activemq-cpp-3.10.0/decaf/lang/String.h:
+
+/usr/include/c++/13/bits/cpp_type_traits.h:
+
+/usr/local/include/activemq-cpp-3.10.0/cms/MessageTransformer.h:
+
+/usr/local/include/activemq-cpp-3.10.0/activemq/transport/FutureResponse.h:
+
+/usr/include/x86_64-linux-gnu/bits/types.h:
+
+/usr/include/c++/13/bits/cxxabi_forced.h:
+
+/usr/include/x86_64-linux-gnu/bits/socket_type.h:
+
+/usr/include/c++/13/bits/localefwd.h:
+
+/usr/local/include/activemq-cpp-3.10.0/decaf/util/Collection.h:
+
+/usr/include/c++/13/bits/ptr_traits.h:
+
+/usr/include/linux/posix_types.h:
+
+/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
+
+/usr/include/c++/13/bits/exception_defines.h:
+
+/usr/local/include/activemq-cpp-3.10.0/cms/Topic.h:
+
+/usr/local/include/activemq-cpp-3.10.0/cms/ConnectionMetaData.h:
+
+/usr/local/include/activemq-cpp-3.10.0/activemq/commands/BrokerError.h:
+
+/usr/include/c++/13/bits/cxxabi_init_exception.h:
+
+/usr/local/include/activemq-cpp-3.10.0/cms/DestinationSource.h:
+
+/usr/local/include/activemq-cpp-3.10.0/cms/BytesMessage.h:
+
+/usr/include/c++/13/typeinfo:
+
+/usr/local/include/activemq-cpp-3.10.0/cms/Connection.h:
+
+/usr/include/x86_64-linux-gnu/bits/setjmp.h:
+
+/usr/include/time.h:
+
+/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
+
+/usr/local/include/activemq-cpp-3.10.0/decaf/util/concurrent/atomic/AtomicRefCounter.h:
+
+/usr/include/c++/13/bits/exception.h:
+
+/usr/local/include/activemq-cpp-3.10.0/decaf/util/StlSet.h:
+
+/usr/local/include/activemq-cpp-3.10.0/decaf/io/IOException.h:
+
+/usr/include/c++/13/streambuf:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
+
+/usr/local/include/activemq-cpp-3.10.0/activemq/commands/RemoveInfo.h:
+
+/usr/include/c++/13/bits/basic_ios.tcc:
+
+/usr/include/linux/stddef.h:
+
+/usr/include/c++/13/bits/functional_hash.h:
+
+/usr/include/errno.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h:
+
+/usr/include/c++/13/bits/ios_base.h:
+
+/usr/local/include/activemq-cpp-3.10.0/activemq/util/Usage.h:
 
 /usr/include/c++/13/bits/uniform_int_dist.h:
 
 /usr/include/c++/13/bits/locale_classes.tcc:
 
-/usr/include/c++/13/bits/memoryfwd.h:
+/usr/include/x86_64-linux-gnu/bits/ss_flags.h:
 
-/usr/include/c++/13/bits/basic_ios.h:
+/usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h:
 
-/usr/local/include/activemq-cpp-3.9.5/activemq/transport/Transport.h:
+/usr/include/c++/13/bits/stl_map.h:
 
-/usr/include/x86_64-linux-gnu/bits/time64.h:
-
-/usr/include/c++/13/bits/ostream_insert.h:
-
-/usr/include/c++/13/bits/postypes.h:
-
-/usr/include/c++/13/bits/std_abs.h:
-
-/usr/include/c++/13/bits/uses_allocator.h:
+/usr/include/x86_64-linux-gnu/bits/types/sigval_t.h:
 
 /usr/include/c++/13/stdexcept:
 
-/usr/local/include/activemq-cpp-3.9.5/activemq/commands/Command.h:
+/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
-/usr/include/linux/errno.h:
+/usr/include/c++/13/string:
+
+/usr/include/apr-1.0/apr_errno.h:
+
+/usr/include/c++/13/bits/nested_exception.h:
+
+/usr/include/c++/13/tuple:
+
+/usr/local/include/activemq-cpp-3.10.0/cms/Closeable.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h:
+
+/usr/include/c++/13/type_traits:
+
+/usr/local/include/activemq-cpp-3.10.0/activemq/commands/SessionInfo.h:
+
+/usr/local/include/activemq-cpp-3.10.0/activemq/commands/ProducerId.h:
+
+/usr/include/c++/13/vector:
+
+/usr/include/ctype.h:
+
+/usr/include/fcntl.h:
+
+/usr/include/features-time64.h:
+
+/usr/local/include/activemq-cpp-3.10.0/cms/AsyncCallback.h:
+
+/usr/local/include/activemq-cpp-3.10.0/activemq/commands/ConsumerInfo.h:
+
+/usr/include/features.h:
+
+/usr/include/c++/13/initializer_list:
+
+/usr/include/limits.h:
+
+/usr/include/linux/close_range.h:
+
+/usr/local/include/activemq-cpp-3.10.0/decaf/util/concurrent/Callable.h:
 
 /usr/include/c++/13/debug/debug.h:
 
-/usr/include/c++/13/cstdlib:
+/usr/include/linux/errno.h:
 
-/usr/include/c++/13/exception:
+/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
 
-/usr/local/include/activemq-cpp-3.9.5/decaf/util/concurrent/atomic/AtomicRefCounter.h:
+/usr/local/include/activemq-cpp-3.10.0/cms/ExceptionListener.h:
 
-/usr/include/c++/13/bits/stl_pair.h:
+/usr/include/linux/limits.h:
 
-/usr/include/x86_64-linux-gnu/bits/errno.h:
-
-/usr/include/wctype.h:
-
-/usr/include/sched.h:
-
-/usr/include/stdc-predef.h:
-
-/usr/local/include/activemq-cpp-3.9.5/cms/ConnectionFactory.h:
+/usr/local/include/activemq-cpp-3.10.0/decaf/util/MapEntry.h:
 
 /usr/include/endian.h:
 
 /usr/include/stdint.h:
 
-/usr/local/include/activemq-cpp-3.9.5/cms/TemporaryQueue.h:
+/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
+
+/usr/local/include/activemq-cpp-3.10.0/decaf/lang/CharSequence.h:
+
+/usr/include/c++/13/bits/locale_facets.tcc:
+
+/usr/include/linux/stat.h:
+
+/usr/include/linux/types.h:
+
+/usr/local/include/activemq-cpp-3.10.0/activemq/transport/ResponseCallback.h:
+
+/usr/local/include/activemq-cpp-3.10.0/activemq/commands/SessionId.h:
+
+/usr/include/pthread.h:
+
+/usr/local/include/activemq-cpp-3.10.0/activemq/core/ActiveMQProducer.h:
+
+/usr/include/wctype.h:
+
+/usr/include/sched.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
 
 /usr/include/c++/13/bits/stl_iterator_base_types.h:
 
 /usr/include/stdio.h:
 
+/usr/local/include/log4cpp/config.h:
+
 /usr/include/stdlib.h:
+
+/usr/include/x86_64-linux-gnu/sys/select.h:
+
+/usr/include/c++/13/cwchar:
+
+/usr/include/x86_64-linux-gnu/asm/socket.h:
+
+/usr/include/signal.h:
+
+/usr/include/strings.h:
+
+/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/gthr-default.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
 /usr/include/c++/13/bits/shared_ptr_base.h:
 
 /usr/include/wchar.h:
 
+/usr/include/c++/13/cwctype:
+
+/usr/include/x86_64-linux-gnu/asm/posix_types.h:
+
+/usr/include/x86_64-linux-gnu/asm/types.h:
+
+/usr/local/include/activemq-cpp-3.10.0/decaf/util/concurrent/locks/AbstractQueuedSynchronizer.h:
+
 /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
 
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
+/usr/include/x86_64-linux-gnu/bits/siginfo-consts-arch.h:
+
+/usr/include/x86_64-linux-gnu/asm/posix_types_64.h:
+
 /usr/include/x86_64-linux-gnu/bits/cpu-set.h:
 
-/usr/include/c++/13/bits/requires_hosted.h:
+/usr/local/include/activemq-cpp-3.10.0/decaf/util/Timer.h:
 
-/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
-
-/usr/local/include/activemq-cpp-3.9.5/cms/Message.h:
-
-/usr/include/x86_64-linux-gnu/bits/sched.h:
-
-/usr/local/include/activemq-cpp-3.9.5/decaf/lang/exceptions/IllegalThreadStateException.h:
-
-/usr/include/time.h:
-
-/usr/include/x86_64-linux-gnu/bits/setjmp.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
-
-/usr/include/c++/13/cwchar:
-
-/usr/include/x86_64-linux-gnu/sys/select.h:
-
-/usr/local/include/activemq-cpp-3.9.5/decaf/util/Comparator.h:
-
-/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
-
-/usr/include/x86_64-linux-gnu/bits/select.h:
-
-/usr/include/x86_64-linux-gnu/bits/time.h:
-
-/usr/local/include/activemq-cpp-3.9.5/decaf/lang/exceptions/IllegalMonitorStateException.h:
-
-/usr/include/c++/13/bits/locale_classes.h:
-
-/usr/include/x86_64-linux-gnu/bits/timesize.h:
+/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
 /usr/include/x86_64-linux-gnu/bits/timex.h:
 
-/usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h:
+/usr/local/include/activemq-cpp-3.10.0/cms/Xid.h:
 
-/usr/local/include/activemq-cpp-3.9.5/activemq/exceptions/ActiveMQException.h:
+/usr/include/c++/13/bits/requires_hosted.h:
+
+/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
+
+/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
+
+/usr/include/x86_64-linux-gnu/bits/local_lim.h:
+
+/usr/include/c++/13/sstream:
+
+/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/locale.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
+
+/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
+
+/usr/local/include/activemq-cpp-3.10.0/decaf/util/concurrent/atomic/AtomicInteger.h:
+
+/usr/local/include/activemq-cpp-3.10.0/cms/TemporaryQueue.h:
+
+/usr/include/x86_64-linux-gnu/bits/sched.h:
+
+/usr/include/x86_64-linux-gnu/bits/struct_stat.h:
+
+/usr/include/c++/13/bits/stl_pair.h:
+
+/usr/include/x86_64-linux-gnu/bits/errno.h:
+
+/usr/include/x86_64-linux-gnu/bits/signum-arch.h:
+
+/usr/local/include/activemq-cpp-3.10.0/activemq/commands/ConsumerId.h:
+
+/usr/include/c++/13/iosfwd:
+
+/usr/include/x86_64-linux-gnu/bits/signum-generic.h:
+
+/usr/local/include/activemq-cpp-3.10.0/decaf/lang/Thread.h:
+
+/usr/local/include/activemq-cpp-3.10.0/activemq/util/MemoryUsage.h:
+
+/usr/include/x86_64-linux-gnu/bits/sigstack.h:
+
+/usr/include/x86_64-linux-gnu/bits/socket.h:
+
+/usr/include/x86_64-linux-gnu/bits/sigthread.h:
+
+/usr/include/x86_64-linux-gnu/bits/sockaddr.h:
+
+/usr/include/x86_64-linux-gnu/bits/statx-generic.h:
+
+/usr/include/unistd.h:
+
+/usr/include/x86_64-linux-gnu/bits/statx.h:
+
+/usr/include/x86_64-linux-gnu/bits/select.h:
+
+/usr/include/x86_64-linux-gnu/bits/time.h:
+
+/usr/include/c++/13/bits/locale_classes.h:
+
+/usr/include/x86_64-linux-gnu/bits/timesize.h:
+
+/usr/include/x86_64-linux-gnu/asm/sockios.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
 
-/usr/local/include/activemq-cpp-3.9.5/cms/CMSException.h:
+/usr/local/include/activemq-cpp-3.10.0/decaf/util/concurrent/Executor.h:
 
-/usr/local/include/activemq-cpp-3.9.5/decaf/lang/exceptions/RuntimeException.h:
+/usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h:
 
 /usr/include/c++/13/bits/stl_multimap.h:
 
@@ -837,128 +1498,28 @@ main.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
 
+/usr/local/include/log4cpp/PropertyConfigurator.hh:
+
+/usr/local/include/activemq-cpp-3.10.0/cms/Queue.h:
+
 /usr/include/c++/13/bits/charconv.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
-/usr/local/include/activemq-cpp-3.9.5/decaf/util/NoSuchElementException.h:
-
-/usr/include/x86_64-linux-gnu/bits/locale.h:
-
-/usr/local/include/activemq-cpp-3.9.5/cms/ConnectionMetaData.h:
+/usr/local/include/activemq-cpp-3.10.0/decaf/lang/Throwable.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
 
-/usr/local/include/activemq-cpp-3.9.5/decaf/util/comparators/Less.h:
-
-/usr/include/c++/13/sstream:
-
-/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/wchar.h:
+/usr/include/x86_64-linux-gnu/bits/types/idtype_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
+/usr/local/include/activemq-cpp-3.10.0/activemq/commands/MessageId.h:
 
-/usr/include/asm-generic/errno.h:
+/usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
+/usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h:
 
-/usr/include/c++/13/ext/atomicity.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/typesizes.h:
-
-/usr/local/include/activemq-cpp-3.9.5/activemq/exceptions/ExceptionDefines.h:
-
-/usr/include/c++/13/bits/exception_defines.h:
-
-/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
-
-/usr/local/include/activemq-cpp-3.9.5/cms/Config.h:
-
-/usr/include/x86_64-linux-gnu/bits/wordsize.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h:
-
-/usr/local/include/activemq-cpp-3.9.5/cms/TemporaryTopic.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
-
-/usr/local/include/activemq-cpp-3.9.5/cms/MessageListener.h:
-
-/usr/include/c++/13/bits/char_traits.h:
-
-/usr/include/c++/13/bits/std_function.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/ctype_inline.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/gthr-default.h:
-
-/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
-
-/usr/include/x86_64-linux-gnu/sys/cdefs.h:
-
-/usr/local/include/activemq-cpp-3.9.5/decaf/lang/Iterable.h:
-
-/usr/include/x86_64-linux-gnu/sys/types.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h:
-
-/usr/include/c++/13/bits/ptr_traits.h:
-
-/usr/local/include/activemq-cpp-3.9.5/activemq/commands/Response.h:
-
-/usr/local/include/activemq-cpp-3.9.5/decaf/lang/exceptions/InterruptedException.h:
-
-/usr/include/c++/13/ostream:
-
-/usr/local/include/activemq-cpp-3.9.5/activemq/transport/ResponseCallback.h:
-
-/usr/local/include/activemq-cpp-3.9.5/decaf/util/Config.h:
-
-/usr/include/c++/13/bits/locale_facets.h:
-
-/usr/local/include/activemq-cpp-3.9.5/activemq/util/Config.h:
-
-/usr/include/x86_64-linux-gnu/sys/single_threaded.h:
-
-/usr/local/include/activemq-cpp-3.9.5/cms/CMSProperties.h:
-
-/usr/local/include/activemq-cpp-3.9.5/cms/Connection.h:
-
-/usr/local/include/activemq-cpp-3.9.5/decaf/util/concurrent/Lock.h:
-
-/usr/local/include/activemq-cpp-3.9.5/cms/IllegalStateException.h:
-
-/usr/local/include/activemq-cpp-3.9.5/cms/InvalidDestinationException.h:
-
-/usr/local/include/activemq-cpp-3.9.5/decaf/util/AbstractCollection.h:
-
-/usr/include/c++/13/bits/ios_base.h:
-
-/usr/local/include/activemq-cpp-3.9.5/cms/MessageAvailableListener.h:
-
-/usr/local/include/activemq-cpp-3.9.5/cms/MessageEOFException.h:
-
-/usr/local/include/activemq-cpp-3.9.5/cms/MessageNotWriteableException.h:
-
-/usr/local/include/activemq-cpp-3.9.5/cms/MessageProducer.h:
+/usr/include/x86_64-linux-gnu/bits/types/stack_t.h:

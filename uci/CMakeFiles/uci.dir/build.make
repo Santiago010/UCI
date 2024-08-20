@@ -93,6 +93,7 @@ uci_EXTERNAL_OBJECTS =
 uci: CMakeFiles/uci.dir/main.cpp.o
 uci: CMakeFiles/uci.dir/build.make
 uci: /usr/local/lib/libactivemq-cpp.a
+uci: /usr/local/lib/liblog4cpp.a
 uci: /usr/lib/x86_64-linux-gnu/libapr-1.a
 uci: /usr/lib/x86_64-linux-gnu/libuuid.a
 uci: /usr/lib/x86_64-linux-gnu/libssl.a

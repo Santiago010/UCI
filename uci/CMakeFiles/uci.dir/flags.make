@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/usr/local/include/activemq-cpp-3.9.5 -I/usr/include/apr-1.0
+CXX_INCLUDES = -I/usr/local/include/activemq-cpp-3.10.0 -I/usr/local/include/log4cpp -I/usr/include/apr-1.0
 
-CXX_FLAGS = -std=gnu++11
+CXX_FLAGS = -g -std=gnu++11
 

@@ -1,68 +1,131 @@
 #include <activemq/core/ActiveMQConnectionFactory.h>
+#include <activemq/library/ActiveMQCPP.h>
+#include <activemq/core/ActiveMQConnection.h>
+#include <activemq/core/ActiveMQSession.h>
+#include <activemq/core/ActiveMQConsumer.h>
+#include <activemq/core/ActiveMQProducer.h>
 #include <cms/Connection.h>
 #include <cms/Session.h>
 #include <cms/MessageProducer.h>
 #include <cms/MessageConsumer.h>
 #include <cms/TextMessage.h>
 #include <iostream>
+#include <vector>
+#include <string.h>
+#include <log4cpp/Category.hh>//Libreria para los Logs 
+#include <log4cpp/PropertyConfigurator.hh> //libreria para los Logs
 
 using namespace std;
 using namespace activemq::core;
 using namespace cms;
 
-int main() {
-    // URI del broker
-    string brokerURI = "tcp://localhost:61616";
-    string queueName = "test";
+log4cpp::Category& root = log4cpp::Category::getRoot();
+string brokerURI = "tcp://localhost:61616";
 
-    // Crear una instancia de ActiveMQConnectionFactory con la URI del broker
-    ActiveMQConnectionFactory* connectionFactory = new ActiveMQConnectionFactory(brokerURI);
+void sendMessage(Session* session);
+void readMessage(Session* session);
 
-    // Crear una conexión
-    Connection* connection = connectionFactory->createConnection();
-    connection->start();
 
-    // Crear una sesión
-    Session* session = connection->createSession(Session::AUTO_ACKNOWLEDGE);
 
-    // Crear una cola
-    Destination* destination = session->createQueue(queueName);
+int main(int argc, char* argv[]) {
 
-    // Crear un productor de mensajes
-    MessageProducer* producer = session->createProducer(destination);
-    producer->setDeliveryMode(DeliveryMode::NON_PERSISTENT);
+    char option;
 
-    // Enviar un mensaje
-    std::string text = "La vida es hermosa";
-    TextMessage* message = session->createTextMessage(text);
-    producer->send(message);
+    activemq::library::ActiveMQCPP::initializeLibrary();
 
-    // Crear un consumidor de mensajes
-    MessageConsumer* consumer = session->createConsumer(destination);
+    try
+    {
+        // Crea una conexion
+       ActiveMQConnectionFactory* connectionFactory = new ActiveMQConnectionFactory(brokerURI);
+auto connection = connectionFactory->createConnection();
+       connection->start();
 
-    // Recibir un mensaje
-    Message* receivedMessage = consumer->receive();
+    //    Crea una sesion
+        auto session = connection->createSession(Session::AUTO_ACKNOWLEDGE);
 
-    try {
-        if (receivedMessage != nullptr) {
-            TextMessage* textMessage = dynamic_cast<TextMessage*>(receivedMessage);
-            if (textMessage != nullptr) {
-                cout << "Received: " << textMessage->getText() << endl;
+        do {
+            cout << "r. Read the message \ns. Send a Message" << endl;
+            cin >> option;
+
+            switch (option) {
+                case 'r':
+                    cout << "Reading Messages..." << endl;
+                    readMessage(session);
+                    break;
+                
+                case 's':
+                    sendMessage(session);
+                    break;
+                
+                case 'e':
+                    cout << "leaving the room..." << endl;
+                    break;
+                default:
+                    cout << "Invalid option, please try again." << endl;
+                    break;
             }
+            // system("clear");
+        } while (option != 'e');
+
+        // Limpia
+        session->close();
+        connection->close();
+        
+        delete session;
+        delete connection;
+        delete connectionFactory;
+
+    }
+    catch(const std::exception& e)
+    {
+         root.errorStream() << "Error: " << e.what();
+    }
+    return 0;
+}
+
+void sendMessage(Session* session){
+
+        string userMessage;
+        cout << "Please enter the message you want to send: ";
+        cin.ignore(); // Ignorar cualquier carácter residual en el buffer
+        getline(cin, userMessage); // Leer la línea completa
+        // Crea un destino (un tema)
+        auto destination = session->createTopic("TEST");
+        
+        // Crea un productor de mensajes
+        auto producer = session->createProducer(destination);
+        
+        // Crea un mensaje
+        auto message = session->createTextMessage(userMessage);
+        
+        // Envía el mensaje
+        producer->send(message);
+
+        producer->close();
+        delete producer;
+
+        cout << "mensaje enviado" << endl;
+}
+
+void readMessage(Session* session){
+    auto destination = session->createTopic("TEST");
+    auto consumer = session->createConsumer(destination);
+
+    auto message = consumer->receive();
+        
+    // Comprueba si el mensaje recibido es un TextMessage
+    if (message != nullptr) {
+        // Realiza el cast a TextMessage para obtener el texto
+        cms::TextMessage* textMessage = dynamic_cast<cms::TextMessage*>(message);
+        if (textMessage != nullptr) {
+            cout << "Received message: " << textMessage->getText() << endl;
+        } else {
+            cout << "Received non-text message." << endl;
         }
-    } catch (CMSException& e) {
-        cerr << "Error occurred: " << e.getMessage() << endl;
+    } else {
+        cout << "No message received." << endl;
     }
 
-    // Limpieza
-    delete producer;
+    consumer->close();  
     delete consumer;
-    delete destination;
-    session->close();
-    delete session;
-    connection->close();
-    delete connection;
-    delete connectionFactory;
-
-    return 0;
 }
