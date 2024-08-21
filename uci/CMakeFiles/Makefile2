@@ -81,12 +81,12 @@ clean: CMakeFiles/uci.dir/clean
 CMakeFiles/uci.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uci.dir/build.make CMakeFiles/uci.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uci.dir/build.make CMakeFiles/uci.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/media/sf_Own_UCI/uci/CMakeFiles --progress-num=1,2 "Built target uci"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/media/sf_Own_UCI/uci/CMakeFiles --progress-num=1,2,3 "Built target uci"
 .PHONY : CMakeFiles/uci.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/uci.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /media/sf_Own_UCI/uci/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/sf_Own_UCI/uci/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/uci.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /media/sf_Own_UCI/uci/CMakeFiles 0
 .PHONY : CMakeFiles/uci.dir/rule

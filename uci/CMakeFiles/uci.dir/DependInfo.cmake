@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/media/sf_Own_UCI/uci/main.cpp" "CMakeFiles/uci.dir/main.cpp.o" "gcc" "CMakeFiles/uci.dir/main.cpp.o.d"
+  "/media/sf_Own_UCI/uci/tinyxml2.cpp" "CMakeFiles/uci.dir/tinyxml2.cpp.o" "gcc" "CMakeFiles/uci.dir/tinyxml2.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
