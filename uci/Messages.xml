@@ -1,8 +1,5 @@
 <Messages>
     <Message uuid="example-uuid">This is an example message.</Message>
-    <Message uuid="1cee4bbb-9bad-4c85-b6a6-e0090408338d">1cee4bbb-9bad-4c85-b6a6-e0090408338d: hola como estas</Message>
-    <Message uuid="5fabcfb4-bc41-4976-be1c-5898810c1cd0">5fabcfb4-bc41-4976-be1c-5898810c1cd0: holaaaaa como vamos</Message>
-    <Message uuid="06c6f3f7-8cab-4980-9393-64a9f8f0d2a2">06c6f3f7-8cab-4980-9393-64a9f8f0d2a2: vamos por buen caamino</Message>
-    <Message uuid="021cb40e-2799-4fe7-8444-b46e279b2375">021cb40e-2799-4fe7-8444-b46e279b2375: estas por hay</Message>
-    <Message uuid="2424626e-2fde-4a1c-9cd6-9c550cb0f0bb">bien gracias hya vamos</Message>
+    <Message uuid="2f73bf1f-2bf3-48ec-9b11-f1ffc31feb88" date-and-time="2024-08-22 13:32:28" latitude-longitude="0.000000,0.000000">que hace</Message>
+    <Message uuid="f34388a0-ea48-4bcc-99e2-45b3b9e12c22" date-and-time="2024-08-22 13:32:42" latitude-longitude=" 0.000000,0.000000">bien gracias</Message>
 </Messages>

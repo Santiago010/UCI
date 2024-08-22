@@ -113,6 +113,10 @@ uci: /usr/local/lib/liblog4cpp.a
 uci: /usr/lib/x86_64-linux-gnu/libapr-1.a
 uci: /usr/lib/x86_64-linux-gnu/libuuid.a
 uci: /usr/lib/x86_64-linux-gnu/libssl.a
+uci: /usr/lib/x86_64-linux-gnu/libgps.a
+uci: /usr/lib/x86_64-linux-gnu/libdbus-1.a
+uci: /usr/lib/x86_64-linux-gnu/libsystemd.a
+uci: /usr/lib/x86_64-linux-gnu/libcap.a
 uci: /usr/lib/x86_64-linux-gnu/libcrypto.a
 uci: CMakeFiles/uci.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/media/sf_Own_UCI/uci/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable uci"
