@@ -6,9 +6,6 @@
 #include <cms/MessageProducer.h>
 #include <cms/MessageConsumer.h>
 #include <cms/TextMessage.h>
-// TODO:log4cpp
-#include <log4cpp/Category.hh>
-#include <log4cpp/PropertyConfigurator.hh>
 #include <thread>
 #include <mutex>
 // TODO:UUID
@@ -24,19 +21,23 @@
 #include <vector>
 #include <string>
 #include <cmath>
+#include <set>  // Incluir el encabezado necesario para std::set
+
 
 // TODO: GPS
 #include <libgpsmm.h>
 
 
-
+#define RED     "\033[31m" 
+#define BLUE    "\033[34m" 
+#define YELLOW  "\033[33m" 
+#define WHITE   "\033[37m"      /* Blanco */
 
 using namespace activemq::core;
 using namespace cms;
 using namespace std;
 
 char option = 'r';
-log4cpp::Category& root = log4cpp::Category::getRoot();
 string brokerURI = "";
 string topicName = "";
 string clientID = "";
@@ -68,9 +69,9 @@ bool getLatitudeLongitude(double &latitude, double &longitude);
 int main() {
 
     if(loadXMLFile("Conf.xml")){
-        std::cout << "configuration file loaded with successfully" << endl;
+        cout<< WHITE << "\nconfiguration file loaded with successfully \nUser: "<< username << endl;
     }else{
-        std::cerr << "Error loading XML conf file: "  << std::endl;
+        cerr << RED<< "Error loading XML conf file."<< endl;
     }
 
 
@@ -84,7 +85,7 @@ int main() {
     activemq::library::ActiveMQCPP::initializeLibrary();
 
     try {
-        ActiveMQConnectionFactory* connectionFactory = new ActiveMQConnectionFactory(brokerURI);
+        ActiveMQConnectionFactory* connectionFactory = new ActiveMQConnectionFactory(brokerURI,username,password);
 
         auto connection = connectionFactory->createConnection();
         connection->setClientID(clientID);
@@ -126,7 +127,7 @@ int main() {
         delete connectionFactory;
     }
     catch (CMSException& e) {
-        cerr << "Exception occurred: " << e.getMessage() << endl;
+        cerr << RED"\nException occurred: "<<e.getMessage()<<endl;
     }
 
     return 0;
@@ -140,7 +141,7 @@ void sendMessage(Session* session, Topic* topic) {
     string messageText;
     string originalMessageText;
     string latitudeLongitude;
-    cout << "Enter the message to send: ";
+    cout<<BLUE << "\nEnter the message to send: ";
     cin.ignore(); // Ignorar cualquier carácter de nueva línea restante en el buffer
     getline(cin, messageText);
 
@@ -162,7 +163,7 @@ void sendMessage(Session* session, Topic* topic) {
         uuidToFilter.insert(uuid);
         saveMessageToXML(filenameMessage, uuid,dateNow,latitudeLongitude, originalMessageText);
     } catch (CMSException& e) {
-        cerr << "Exception occurred while sending message: " << e.getMessage() << endl;
+        cerr << "Exception occurred while sending message: "<< e.getMessage() << endl;
     }
 
     stateReading = true;
@@ -192,16 +193,16 @@ void readMessage(MessageConsumer* consumer) {
 
                 // Verificar si el UUID está en la lista de UUIDs a filtrar
                 if (uuidToFilter.find(uuid) == uuidToFilter.end()) {
-                    cout << "Received message: " << actualMessage <<"\nwith uuid:" << uuid<< "\ndate Time: " <<dateNow << "\nLatitude and Longitude: " << latLong<< endl;
+                    cout << YELLOW<< "\nReceived message: " << actualMessage <<"\nwith uuid:" << uuid<< "\ndate Time: " <<dateNow << "\nLatitude and Longitude: " << latLong<< endl;
                     saveMessageToXML(filenameMessage, uuid,dateNow,latLong, actualMessage);
                 } else {
-                    cout << "Message with filtered UUID sent: " << uuid << endl;
+                    cout << YELLOW<<"\nMessage with UUID sent: "<< uuid<<endl;
                 }
             } else {
-                cout << "Received message in unknown format: " << messageText << endl;
+                cerr <<RED <<"\nReceived message in unknown format: "<< messageText<< endl;
             }
         } else {
-            cout << "Received non-text message." << endl;
+            cerr<<RED<<" \nReceived non-text message."<<endl;
         }
         delete message;
     }
@@ -209,7 +210,7 @@ void readMessage(MessageConsumer* consumer) {
 
 void userInput(Session* session, Topic* topic) {
     while (true) {
-        cout << "\ns. Send a Message \ne. Exit \nReading Message..." << endl;
+        cout<<BLUE << "--------------------Options-------------------- \ns. Send a Message \ne. Exit \n\nReading Messages..." << endl;
         cin >> option;
 
         // Bloquear el acceso a la variable de opción para evitar condiciones de carrera
@@ -220,10 +221,10 @@ void userInput(Session* session, Topic* topic) {
         }
 
         if (option == 's') {
-            cout << "Sending a Message..." << endl;
+            cout <<WHITE<< "\nSending a Message..." << endl;
             sendMessage(session, topic); // Pasar Session y Topic
         } else {
-            cout << "Invalid option." << endl;
+            cerr<<RED << "\nInvalid option." << endl;
         }
     }
 }
@@ -245,18 +246,18 @@ bool fileXmlExists(const std::string& filename) {
 
 void createXMLFile(const std::string& filename) {
     tinyxml2::XMLDocument doc;
-    tinyxml2::XMLElement* root = doc.NewElement("Messages");
-    doc.InsertFirstChild(root);
+    tinyxml2::XMLElement* rootdoc = doc.NewElement("Messages");
+    doc.InsertFirstChild(rootdoc);
     
     // Agrega un elemento inicial si es necesario
     tinyxml2::XMLElement* message = doc.NewElement("Message");
     message->SetAttribute("uuid", "example-uuid");
-    message->SetText("This is an example message.");
-    root->InsertEndChild(message);
+    message->SetText("This is a test message.");
+    rootdoc->InsertEndChild(message);
     
     // Guardar el archivo
     doc.SaveFile(filename.c_str());
-    cout << "xml file of messages successfully created";
+    cout<<WHITE << "\nxml file of messages successfully created"<<endl;
 }
 
 
@@ -315,14 +316,14 @@ void saveMessageToXML(const std::string& filename, const std::string& uuid,const
     
     // Cargar el archivo XML existente
     if (doc.LoadFile(filename.c_str()) != tinyxml2::XML_SUCCESS) {
-        std::cerr << "Error loading XML file: " << filename << std::endl;
+        std::cerr <<RED<< "Error loading XML file: " << filename << std::endl;
         return;
     }
 
     // Obtener el nodo raíz
-    tinyxml2::XMLElement* root = doc.FirstChildElement("Messages");
-    if (!root) {
-        std::cerr << "No root element 'Messages' found in XML file." << std::endl;
+    tinyxml2::XMLElement* rootdoc = doc.FirstChildElement("Messages");
+    if (!rootdoc) {
+        cerr << RED <<"\n No root element 'Messages' found in XML file."<<endl;
         return;
     }
 
@@ -335,11 +336,11 @@ void saveMessageToXML(const std::string& filename, const std::string& uuid,const
     messageElement->SetText(messageText.c_str());
     
     // Insertar el nuevo mensaje en el nodo raíz
-    root->InsertEndChild(messageElement);
+    rootdoc->InsertEndChild(messageElement);
     
     // Guardar los cambios en el archivo
     if (doc.SaveFile(filename.c_str()) != tinyxml2::XML_SUCCESS) {
-        std::cerr << "Error saving XML file: " << filename << std::endl;
+        std::cerr <<RED<< "Error saving XML file: " << filename << std::endl;
     }
 }
 
@@ -364,14 +365,14 @@ bool getLatitudeLongitude(double &latitude, double &longitude){
     gpsmm gps_rec("localhost", DEFAULT_GPSD_PORT);
 
     if (gps_rec.stream(WATCH_ENABLE | WATCH_JSON) == NULL) {
-        cerr << "Could not connect to GPSD." << endl;
+        cerr <<RED<<  "Could not connect to GPSD."<<endl;
         return false;
     }
 
         while (gps_rec.waiting(1000000)) {
         struct gps_data_t* gpsData = gps_rec.read();
         if (gpsData == nullptr) {
-            cerr << "Error reading GPS data." << endl;
+            cerr<<RED << "\nError reading GPS data."<< endl;
             continue;
         }
 
@@ -384,6 +385,6 @@ bool getLatitudeLongitude(double &latitude, double &longitude){
         }
     }
 
-    cerr << "No se pudo obtener una fijación válida del GPS." << endl;
+    cerr <<RED<< "\nCould not obtain a valid GPS fix."<< endl;
     return false;
 }

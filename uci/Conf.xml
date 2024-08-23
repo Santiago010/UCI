@@ -1,21 +1,9 @@
-<!-- char option = 'r';
-log4cpp::Category& root = log4cpp::Category::getRoot();
-string brokerURI = "tcp://localhost:61616";
-string topicName = "TEST";
-string clientID = "";
-string subscriptionName = "MyDurableSubscription";
-string username = "user1";
-string password = "password1";
-bool stateReading = true;
-string filename = "Messages.xml"; -->
-
-
 <Conf>
     <Properties type="brokerURI">tcp://localhost:61616</Properties>
-    <Properties type="topicName">TEST</Properties>
-    <Properties type="clientID">2</Properties>
+    <Properties type="topicName">TEST.TOPIC</Properties>
+    <Properties type="clientID">1</Properties>
     <Properties type="subscriptionName">MyDurableSubscription</Properties>
-    <Properties type="username">user1</Properties>
-    <Properties type="password">password1</Properties>
+    <Properties type="username">santiago</Properties>
+    <Properties type="password">sol0</Properties>
     <Properties type ="filenameMessage">Messages.xml</Properties>
 </Conf>
