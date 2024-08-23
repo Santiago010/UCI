@@ -1,0 +1,280 @@
+2024-08-23 11:12:16,605 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[/media/sf_Own_UCI/apache-activemq-5.18.5/data/kahadb] | org.apache.activemq.broker.BrokerService | main
+2024-08-23 11:12:16,618 | INFO  | Starting Persistence Adapter: KahaDBPersistenceAdapter[/media/sf_Own_UCI/apache-activemq-5.18.5/data/kahadb] | org.apache.activemq.broker.BrokerService | main
+2024-08-23 11:12:16,648 | INFO  | Starting KahaDBStore | org.apache.activemq.store.kahadb.KahaDBStore | main
+2024-08-23 11:12:16,649 | INFO  | Opening MessageDatabase | org.apache.activemq.store.kahadb.MessageDatabase | main
+2024-08-23 11:12:17,104 | INFO  | Starting Temp Data Store | org.apache.activemq.broker.BrokerService | main
+2024-08-23 11:12:17,106 | INFO  | PListStore:[/media/sf_Own_UCI/apache-activemq-5.18.5/data/localhost/tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | main
+2024-08-23 11:12:17,108 | INFO  | Starting Job Scheduler Store | org.apache.activemq.broker.BrokerService | main
+2024-08-23 11:12:17,108 | INFO  | Persistence Adapter successfully started | org.apache.activemq.broker.BrokerService | main
+2024-08-23 11:12:17,315 | INFO  | Apache ActiveMQ 5.18.5 (localhost, ID:s-VirtualBox-39337-1724429537158-0:1) is starting | org.apache.activemq.broker.BrokerService | main
+2024-08-23 11:12:17,346 | INFO  | Listening for connections at: tcp://s-VirtualBox:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2024-08-23 11:12:17,349 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | main
+2024-08-23 11:12:17,355 | INFO  | Listening for connections at: amqp://s-VirtualBox:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2024-08-23 11:12:17,356 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | main
+2024-08-23 11:12:17,365 | INFO  | Listening for connections at: stomp://s-VirtualBox:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2024-08-23 11:12:17,366 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | main
+2024-08-23 11:12:17,380 | INFO  | Listening for connections at: mqtt://s-VirtualBox:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2024-08-23 11:12:17,381 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | main
+2024-08-23 11:12:17,385 | INFO  | Starting Jetty server | org.apache.activemq.transport.WebTransportServerSupport | main
+2024-08-23 11:12:17,436 | INFO  | Creating Jetty connector | org.apache.activemq.transport.WebTransportServerSupport | main
+2024-08-23 11:12:17,503 | WARN  | ServletContext@o.e.j.s.ServletContextHandler@43045f9f{/,null,STARTING} has uncovered http methods for path: / | org.eclipse.jetty.security.SecurityHandler | main
+2024-08-23 11:12:17,595 | INFO  | Listening for connections at ws://s-VirtualBox:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | main
+2024-08-23 11:12:17,597 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | main
+2024-08-23 11:12:17,597 | INFO  | Apache ActiveMQ 5.18.5 (localhost, ID:s-VirtualBox-39337-1724429537158-0:1) started | org.apache.activemq.broker.BrokerService | main
+2024-08-23 11:12:17,612 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | main
+2024-08-23 11:12:19,702 | INFO  | ActiveMQ WebConsole available at http://127.0.0.1:8161/ | org.apache.activemq.web.WebConsoleStarter | main
+2024-08-23 11:12:19,703 | INFO  | ActiveMQ Jolokia REST API available at http://127.0.0.1:8161/api/jolokia/ | org.apache.activemq.web.WebConsoleStarter | main
+2024-08-23 11:14:37,283 | INFO  | Apache ActiveMQ 5.18.5 (localhost, ID:s-VirtualBox-39337-1724429537158-0:1) is shutting down | org.apache.activemq.broker.BrokerService | ActiveMQ ShutdownHook
+2024-08-23 11:14:37,290 | INFO  | Connector openwire stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2024-08-23 11:14:37,291 | INFO  | socketQueue interrupted - stopping | org.apache.activemq.transport.tcp.TcpTransportServer | ActiveMQ Transport Server Thread Handler: tcp://0.0.0.0:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+2024-08-23 11:14:37,296 | INFO  | Could not accept connection during shutdown  : null (null) | org.apache.activemq.broker.TransportConnector | ActiveMQ Transport Server Thread Handler: tcp://0.0.0.0:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+2024-08-23 11:14:37,306 | INFO  | Connector amqp stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2024-08-23 11:14:37,307 | INFO  | Connector stomp stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2024-08-23 11:14:37,309 | INFO  | Connector mqtt stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2024-08-23 11:14:37,328 | INFO  | Connector ws stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2024-08-23 11:14:37,340 | INFO  | PListStore:[/media/sf_Own_UCI/apache-activemq-5.18.5/data/localhost/tmp_storage] stopped | org.apache.activemq.store.kahadb.plist.PListStoreImpl | ActiveMQ ShutdownHook
+2024-08-23 11:14:37,340 | INFO  | Stopping async queue tasks | org.apache.activemq.store.kahadb.KahaDBStore | ActiveMQ ShutdownHook
+2024-08-23 11:14:37,340 | INFO  | Stopping async topic tasks | org.apache.activemq.store.kahadb.KahaDBStore | ActiveMQ ShutdownHook
+2024-08-23 11:14:37,344 | INFO  | Stopped KahaDB | org.apache.activemq.store.kahadb.KahaDBStore | ActiveMQ ShutdownHook
+2024-08-23 11:14:37,380 | INFO  | Apache ActiveMQ 5.18.5 (localhost, ID:s-VirtualBox-39337-1724429537158-0:1) uptime 2 minutes | org.apache.activemq.broker.BrokerService | ActiveMQ ShutdownHook
+2024-08-23 11:14:37,380 | INFO  | Apache ActiveMQ 5.18.5 (localhost, ID:s-VirtualBox-39337-1724429537158-0:1) is shutdown | org.apache.activemq.broker.BrokerService | ActiveMQ ShutdownHook
+2024-08-23 11:14:48,513 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[/media/sf_Own_UCI/apache-activemq-5.18.5/data/kahadb] | org.apache.activemq.broker.BrokerService | main
+2024-08-23 11:14:48,525 | INFO  | Starting Persistence Adapter: KahaDBPersistenceAdapter[/media/sf_Own_UCI/apache-activemq-5.18.5/data/kahadb] | org.apache.activemq.broker.BrokerService | main
+2024-08-23 11:14:48,550 | INFO  | Starting KahaDBStore | org.apache.activemq.store.kahadb.KahaDBStore | main
+2024-08-23 11:14:48,551 | INFO  | Opening MessageDatabase | org.apache.activemq.store.kahadb.MessageDatabase | main
+2024-08-23 11:14:48,610 | INFO  | KahaDB is version 7 | org.apache.activemq.store.kahadb.MessageDatabase | main
+2024-08-23 11:14:48,803 | INFO  | Starting Temp Data Store | org.apache.activemq.broker.BrokerService | main
+2024-08-23 11:14:48,804 | INFO  | PListStore:[/media/sf_Own_UCI/apache-activemq-5.18.5/data/localhost/tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | main
+2024-08-23 11:14:48,805 | INFO  | Starting Job Scheduler Store | org.apache.activemq.broker.BrokerService | main
+2024-08-23 11:14:48,805 | INFO  | Persistence Adapter successfully started | org.apache.activemq.broker.BrokerService | main
+2024-08-23 11:14:49,073 | INFO  | Apache ActiveMQ 5.18.5 (localhost, ID:s-VirtualBox-39025-1724429688828-0:1) is starting | org.apache.activemq.broker.BrokerService | main
+2024-08-23 11:14:49,148 | INFO  | Listening for connections at: tcp://s-VirtualBox:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2024-08-23 11:14:49,149 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | main
+2024-08-23 11:14:49,156 | INFO  | Listening for connections at: amqp://s-VirtualBox:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2024-08-23 11:14:49,157 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | main
+2024-08-23 11:14:49,164 | INFO  | Listening for connections at: stomp://s-VirtualBox:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2024-08-23 11:14:49,165 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | main
+2024-08-23 11:14:49,189 | INFO  | Listening for connections at: mqtt://s-VirtualBox:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2024-08-23 11:14:49,190 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | main
+2024-08-23 11:14:49,199 | INFO  | Starting Jetty server | org.apache.activemq.transport.WebTransportServerSupport | main
+2024-08-23 11:14:49,251 | INFO  | Creating Jetty connector | org.apache.activemq.transport.WebTransportServerSupport | main
+2024-08-23 11:14:49,344 | WARN  | ServletContext@o.e.j.s.ServletContextHandler@733aa9d8{/,null,STARTING} has uncovered http methods for path: / | org.eclipse.jetty.security.SecurityHandler | main
+2024-08-23 11:14:49,473 | INFO  | Listening for connections at ws://s-VirtualBox:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | main
+2024-08-23 11:14:49,474 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | main
+2024-08-23 11:14:49,475 | INFO  | Apache ActiveMQ 5.18.5 (localhost, ID:s-VirtualBox-39025-1724429688828-0:1) started | org.apache.activemq.broker.BrokerService | main
+2024-08-23 11:14:49,475 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | main
+2024-08-23 11:14:51,252 | INFO  | ActiveMQ WebConsole available at http://127.0.0.1:8161/ | org.apache.activemq.web.WebConsoleStarter | main
+2024-08-23 11:14:51,252 | INFO  | ActiveMQ Jolokia REST API available at http://127.0.0.1:8161/api/jolokia/ | org.apache.activemq.web.WebConsoleStarter | main
+2024-08-23 11:15:09,033 | WARN  | Failed to add Connection id=ID:s-VirtualBox-34435-1724429708776-0:0, clientId=1, clientIP=tcp://127.0.0.1:44263 due to User name [user1] or password is invalid. | org.apache.activemq.broker.TransportConnection | ActiveMQ Transport: tcp:///127.0.0.1:44263@61616
+2024-08-23 11:15:09,035 | WARN  | Security Error occurred on connection to: tcp://127.0.0.1:44263, User name [user1] or password is invalid. | org.apache.activemq.broker.TransportConnection.Service | ActiveMQ Transport: tcp:///127.0.0.1:44263@61616
+2024-08-23 11:15:11,036 | INFO  | Stopping tcp://127.0.0.1:44263 because Failed with SecurityException: User name [user1] or password is invalid. | org.apache.activemq.broker.TransportConnection | ActiveMQ BrokerService[localhost] Task-2
+2024-08-23 11:15:50,001 | WARN  | Failed to add Connection id=ID:s-VirtualBox-38019-1724429749893-0:0, clientId=1, clientIP=tcp://127.0.0.1:46365 due to User name [user1] or password is invalid. | org.apache.activemq.broker.TransportConnection | ActiveMQ Transport: tcp:///127.0.0.1:46365@61616
+2024-08-23 11:15:50,002 | WARN  | Security Error occurred on connection to: tcp://127.0.0.1:46365, User name [user1] or password is invalid. | org.apache.activemq.broker.TransportConnection.Service | ActiveMQ Transport: tcp:///127.0.0.1:46365@61616
+2024-08-23 11:15:52,003 | INFO  | Stopping tcp://127.0.0.1:46365 because Failed with SecurityException: User name [user1] or password is invalid. | org.apache.activemq.broker.TransportConnection | ActiveMQ BrokerService[localhost] Task-4
+2024-08-23 11:17:15,293 | WARN  | Failed to add Connection id=ID:s-VirtualBox-39893-1724429835166-0:0, clientId=1, clientIP=tcp://127.0.0.1:32937 due to User name [user1] or password is invalid. | org.apache.activemq.broker.TransportConnection | ActiveMQ Transport: tcp:///127.0.0.1:32937@61616
+2024-08-23 11:17:15,293 | WARN  | Security Error occurred on connection to: tcp://127.0.0.1:32937, User name [user1] or password is invalid. | org.apache.activemq.broker.TransportConnection.Service | ActiveMQ Transport: tcp:///127.0.0.1:32937@61616
+2024-08-23 11:17:17,296 | INFO  | Stopping tcp://127.0.0.1:32937 because Failed with SecurityException: User name [user1] or password is invalid. | org.apache.activemq.broker.TransportConnection | ActiveMQ BrokerService[localhost] Task-6
+2024-08-23 11:18:31,558 | WARN  | Failed to add Connection id=ID:s-VirtualBox-38329-1724429911448-0:0, clientId=1, clientIP=tcp://127.0.0.1:36497 due to User name [user1] or password is invalid. | org.apache.activemq.broker.TransportConnection | ActiveMQ Transport: tcp:///127.0.0.1:36497@61616
+2024-08-23 11:18:31,558 | WARN  | Security Error occurred on connection to: tcp://127.0.0.1:36497, User name [user1] or password is invalid. | org.apache.activemq.broker.TransportConnection.Service | ActiveMQ Transport: tcp:///127.0.0.1:36497@61616
+2024-08-23 11:18:33,559 | INFO  | Stopping tcp://127.0.0.1:36497 because Failed with SecurityException: User name [user1] or password is invalid. | org.apache.activemq.broker.TransportConnection | ActiveMQ BrokerService[localhost] Task-8
+2024-08-23 11:20:58,637 | INFO  | Apache ActiveMQ 5.18.5 (localhost, ID:s-VirtualBox-39025-1724429688828-0:1) is shutting down | org.apache.activemq.broker.BrokerService | ActiveMQ ShutdownHook
+2024-08-23 11:20:58,656 | INFO  | Connector openwire stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2024-08-23 11:20:58,658 | INFO  | Connector amqp stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2024-08-23 11:20:58,660 | INFO  | Connector stomp stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2024-08-23 11:20:58,662 | INFO  | Connector mqtt stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2024-08-23 11:20:58,662 | INFO  | socketQueue interrupted - stopping | org.apache.activemq.transport.tcp.TcpTransportServer | ActiveMQ Transport Server Thread Handler: mqtt://0.0.0.0:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+2024-08-23 11:20:58,688 | INFO  | Could not accept connection during shutdown  : null (null) | org.apache.activemq.broker.TransportConnector | ActiveMQ Transport Server Thread Handler: mqtt://0.0.0.0:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+2024-08-23 11:20:58,694 | INFO  | Connector ws stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2024-08-23 11:20:58,699 | INFO  | PListStore:[/media/sf_Own_UCI/apache-activemq-5.18.5/data/localhost/tmp_storage] stopped | org.apache.activemq.store.kahadb.plist.PListStoreImpl | ActiveMQ ShutdownHook
+2024-08-23 11:20:58,699 | INFO  | Stopping async queue tasks | org.apache.activemq.store.kahadb.KahaDBStore | ActiveMQ ShutdownHook
+2024-08-23 11:20:58,700 | INFO  | Stopping async topic tasks | org.apache.activemq.store.kahadb.KahaDBStore | ActiveMQ ShutdownHook
+2024-08-23 11:20:58,700 | INFO  | Stopped KahaDB | org.apache.activemq.store.kahadb.KahaDBStore | ActiveMQ ShutdownHook
+2024-08-23 11:20:58,726 | INFO  | Apache ActiveMQ 5.18.5 (localhost, ID:s-VirtualBox-39025-1724429688828-0:1) uptime 6 minutes | org.apache.activemq.broker.BrokerService | ActiveMQ ShutdownHook
+2024-08-23 11:20:58,727 | INFO  | Apache ActiveMQ 5.18.5 (localhost, ID:s-VirtualBox-39025-1724429688828-0:1) is shutdown | org.apache.activemq.broker.BrokerService | ActiveMQ ShutdownHook
+2024-08-23 11:21:06,742 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[/media/sf_Own_UCI/apache-activemq-5.18.5/data/kahadb] | org.apache.activemq.broker.BrokerService | main
+2024-08-23 11:21:06,755 | INFO  | Starting Persistence Adapter: KahaDBPersistenceAdapter[/media/sf_Own_UCI/apache-activemq-5.18.5/data/kahadb] | org.apache.activemq.broker.BrokerService | main
+2024-08-23 11:21:06,779 | INFO  | Starting KahaDBStore | org.apache.activemq.store.kahadb.KahaDBStore | main
+2024-08-23 11:21:06,780 | INFO  | Opening MessageDatabase | org.apache.activemq.store.kahadb.MessageDatabase | main
+2024-08-23 11:21:06,844 | INFO  | KahaDB is version 7 | org.apache.activemq.store.kahadb.MessageDatabase | main
+2024-08-23 11:21:07,001 | INFO  | Starting Temp Data Store | org.apache.activemq.broker.BrokerService | main
+2024-08-23 11:21:07,002 | INFO  | PListStore:[/media/sf_Own_UCI/apache-activemq-5.18.5/data/localhost/tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | main
+2024-08-23 11:21:07,003 | INFO  | Starting Job Scheduler Store | org.apache.activemq.broker.BrokerService | main
+2024-08-23 11:21:07,003 | INFO  | Persistence Adapter successfully started | org.apache.activemq.broker.BrokerService | main
+2024-08-23 11:21:07,179 | INFO  | Apache ActiveMQ 5.18.5 (localhost, ID:s-VirtualBox-33685-1724430067022-0:1) is starting | org.apache.activemq.broker.BrokerService | main
+2024-08-23 11:21:07,224 | INFO  | Listening for connections at: tcp://s-VirtualBox:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2024-08-23 11:21:07,230 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | main
+2024-08-23 11:21:07,267 | INFO  | Listening for connections at: amqp://s-VirtualBox:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2024-08-23 11:21:07,269 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | main
+2024-08-23 11:21:07,322 | INFO  | Listening for connections at: stomp://s-VirtualBox:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2024-08-23 11:21:07,323 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | main
+2024-08-23 11:21:07,378 | INFO  | Listening for connections at: mqtt://s-VirtualBox:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2024-08-23 11:21:07,381 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | main
+2024-08-23 11:21:07,440 | INFO  | Starting Jetty server | org.apache.activemq.transport.WebTransportServerSupport | main
+2024-08-23 11:21:07,604 | INFO  | Creating Jetty connector | org.apache.activemq.transport.WebTransportServerSupport | main
+2024-08-23 11:21:07,721 | WARN  | ServletContext@o.e.j.s.ServletContextHandler@599e4d41{/,null,STARTING} has uncovered http methods for path: / | org.eclipse.jetty.security.SecurityHandler | main
+2024-08-23 11:21:07,808 | INFO  | Listening for connections at ws://s-VirtualBox:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | main
+2024-08-23 11:21:07,808 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | main
+2024-08-23 11:21:07,809 | INFO  | Apache ActiveMQ 5.18.5 (localhost, ID:s-VirtualBox-33685-1724430067022-0:1) started | org.apache.activemq.broker.BrokerService | main
+2024-08-23 11:21:07,809 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | main
+2024-08-23 11:21:08,847 | INFO  | ActiveMQ WebConsole available at http://127.0.0.1:8161/ | org.apache.activemq.web.WebConsoleStarter | main
+2024-08-23 11:21:08,847 | INFO  | ActiveMQ Jolokia REST API available at http://127.0.0.1:8161/api/jolokia/ | org.apache.activemq.web.WebConsoleStarter | main
+2024-08-23 11:21:22,353 | WARN  | Failed to add Connection id=ID:s-VirtualBox-43409-1724430082134-0:0, clientId=1, clientIP=tcp://127.0.0.1:43677 due to User name [user1] or password is invalid. | org.apache.activemq.broker.TransportConnection | ActiveMQ Transport: tcp:///127.0.0.1:43677@61616
+2024-08-23 11:21:22,355 | WARN  | Security Error occurred on connection to: tcp://127.0.0.1:43677, User name [user1] or password is invalid. | org.apache.activemq.broker.TransportConnection.Service | ActiveMQ Transport: tcp:///127.0.0.1:43677@61616
+2024-08-23 11:21:24,356 | INFO  | Stopping tcp://127.0.0.1:43677 because Failed with SecurityException: User name [user1] or password is invalid. | org.apache.activemq.broker.TransportConnection | ActiveMQ BrokerService[localhost] Task-2
+2024-08-23 11:21:46,605 | WARN  | Failed to add Connection id=ID:s-VirtualBox-43257-1724430106483-0:0, clientId=1, clientIP=tcp://127.0.0.1:37913 due to User name [user1] or password is invalid. | org.apache.activemq.broker.TransportConnection | ActiveMQ Transport: tcp:///127.0.0.1:37913@61616
+2024-08-23 11:21:46,606 | WARN  | Security Error occurred on connection to: tcp://127.0.0.1:37913, User name [user1] or password is invalid. | org.apache.activemq.broker.TransportConnection.Service | ActiveMQ Transport: tcp:///127.0.0.1:37913@61616
+2024-08-23 11:21:48,606 | INFO  | Stopping tcp://127.0.0.1:37913 because Failed with SecurityException: User name [user1] or password is invalid. | org.apache.activemq.broker.TransportConnection | ActiveMQ BrokerService[localhost] Task-1
+2024-08-23 11:25:29,171 | WARN  | Failed to add Connection id=ID:s-VirtualBox-35213-1724430329059-0:0, clientId=1, clientIP=tcp://127.0.0.1:45377 due to User name [user1] or password is invalid. | org.apache.activemq.broker.TransportConnection | ActiveMQ Transport: tcp:///127.0.0.1:45377@61616
+2024-08-23 11:25:29,172 | WARN  | Security Error occurred on connection to: tcp://127.0.0.1:45377, User name [user1] or password is invalid. | org.apache.activemq.broker.TransportConnection.Service | ActiveMQ Transport: tcp:///127.0.0.1:45377@61616
+2024-08-23 11:25:31,172 | INFO  | Stopping tcp://127.0.0.1:45377 because Failed with SecurityException: User name [user1] or password is invalid. | org.apache.activemq.broker.TransportConnection | ActiveMQ BrokerService[localhost] Task-4
+2024-08-23 11:26:12,514 | INFO  | Apache ActiveMQ 5.18.5 (localhost, ID:s-VirtualBox-33685-1724430067022-0:1) is shutting down | org.apache.activemq.broker.BrokerService | Thread-20
+2024-08-23 11:26:12,516 | INFO  | Connector openwire stopped | org.apache.activemq.broker.TransportConnector | Thread-20
+2024-08-23 11:26:12,517 | INFO  | Connector amqp stopped | org.apache.activemq.broker.TransportConnector | Thread-20
+2024-08-23 11:26:12,518 | INFO  | Connector stomp stopped | org.apache.activemq.broker.TransportConnector | Thread-20
+2024-08-23 11:26:12,521 | INFO  | Connector mqtt stopped | org.apache.activemq.broker.TransportConnector | Thread-20
+2024-08-23 11:26:12,562 | INFO  | Connector ws stopped | org.apache.activemq.broker.TransportConnector | Thread-20
+2024-08-23 11:26:12,586 | INFO  | PListStore:[/media/sf_Own_UCI/apache-activemq-5.18.5/data/localhost/tmp_storage] stopped | org.apache.activemq.store.kahadb.plist.PListStoreImpl | Thread-20
+2024-08-23 11:26:12,587 | INFO  | Stopping async queue tasks | org.apache.activemq.store.kahadb.KahaDBStore | Thread-20
+2024-08-23 11:26:12,587 | INFO  | Stopping async topic tasks | org.apache.activemq.store.kahadb.KahaDBStore | Thread-20
+2024-08-23 11:26:12,590 | INFO  | Stopped KahaDB | org.apache.activemq.store.kahadb.KahaDBStore | Thread-20
+2024-08-23 11:26:12,634 | INFO  | Apache ActiveMQ 5.18.5 (localhost, ID:s-VirtualBox-33685-1724430067022-0:1) uptime 5 minutes | org.apache.activemq.broker.BrokerService | Thread-20
+2024-08-23 11:26:12,634 | INFO  | Apache ActiveMQ 5.18.5 (localhost, ID:s-VirtualBox-33685-1724430067022-0:1) is shutdown | org.apache.activemq.broker.BrokerService | Thread-20
+2024-08-23 11:26:31,463 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[/media/sf_Own_UCI/apache-activemq-5.18.5/data/kahadb] | org.apache.activemq.broker.BrokerService | main
+2024-08-23 11:26:31,478 | INFO  | Starting Persistence Adapter: KahaDBPersistenceAdapter[/media/sf_Own_UCI/apache-activemq-5.18.5/data/kahadb] | org.apache.activemq.broker.BrokerService | main
+2024-08-23 11:26:31,500 | INFO  | Starting KahaDBStore | org.apache.activemq.store.kahadb.KahaDBStore | main
+2024-08-23 11:26:31,501 | INFO  | Opening MessageDatabase | org.apache.activemq.store.kahadb.MessageDatabase | main
+2024-08-23 11:26:31,576 | INFO  | KahaDB is version 7 | org.apache.activemq.store.kahadb.MessageDatabase | main
+2024-08-23 11:26:31,790 | INFO  | Starting Temp Data Store | org.apache.activemq.broker.BrokerService | main
+2024-08-23 11:26:31,794 | INFO  | PListStore:[/media/sf_Own_UCI/apache-activemq-5.18.5/data/localhost/tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | main
+2024-08-23 11:26:31,794 | INFO  | Starting Job Scheduler Store | org.apache.activemq.broker.BrokerService | main
+2024-08-23 11:26:31,795 | INFO  | Persistence Adapter successfully started | org.apache.activemq.broker.BrokerService | main
+2024-08-23 11:26:31,976 | INFO  | Apache ActiveMQ 5.18.5 (localhost, ID:s-VirtualBox-37781-1724430391820-0:1) is starting | org.apache.activemq.broker.BrokerService | main
+2024-08-23 11:26:32,043 | INFO  | Listening for connections at: tcp://s-VirtualBox:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2024-08-23 11:26:32,047 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | main
+2024-08-23 11:26:32,068 | INFO  | Listening for connections at: amqp://s-VirtualBox:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2024-08-23 11:26:32,069 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | main
+2024-08-23 11:26:32,078 | INFO  | Listening for connections at: stomp://s-VirtualBox:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2024-08-23 11:26:32,079 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | main
+2024-08-23 11:26:32,105 | INFO  | Listening for connections at: mqtt://s-VirtualBox:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2024-08-23 11:26:32,110 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | main
+2024-08-23 11:26:32,129 | INFO  | Starting Jetty server | org.apache.activemq.transport.WebTransportServerSupport | main
+2024-08-23 11:26:32,206 | INFO  | Creating Jetty connector | org.apache.activemq.transport.WebTransportServerSupport | main
+2024-08-23 11:26:32,336 | WARN  | ServletContext@o.e.j.s.ServletContextHandler@599e4d41{/,null,STARTING} has uncovered http methods for path: / | org.eclipse.jetty.security.SecurityHandler | main
+2024-08-23 11:26:32,423 | INFO  | Listening for connections at ws://s-VirtualBox:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | main
+2024-08-23 11:26:32,423 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | main
+2024-08-23 11:26:32,425 | INFO  | Apache ActiveMQ 5.18.5 (localhost, ID:s-VirtualBox-37781-1724430391820-0:1) started | org.apache.activemq.broker.BrokerService | main
+2024-08-23 11:26:32,427 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | main
+2024-08-23 11:26:34,918 | INFO  | ActiveMQ WebConsole available at http://127.0.0.1:8161/ | org.apache.activemq.web.WebConsoleStarter | main
+2024-08-23 11:26:34,919 | INFO  | ActiveMQ Jolokia REST API available at http://127.0.0.1:8161/api/jolokia/ | org.apache.activemq.web.WebConsoleStarter | main
+2024-08-23 11:26:48,947 | WARN  | Failed to add Connection id=ID:s-VirtualBox-40503-1724430408681-0:0, clientId=1, clientIP=tcp://127.0.0.1:38881 due to User name [santiago] or password is invalid. | org.apache.activemq.broker.TransportConnection | ActiveMQ Transport: tcp:///127.0.0.1:38881@61616
+2024-08-23 11:26:48,951 | WARN  | Security Error occurred on connection to: tcp://127.0.0.1:38881, User name [santiago] or password is invalid. | org.apache.activemq.broker.TransportConnection.Service | ActiveMQ Transport: tcp:///127.0.0.1:38881@61616
+2024-08-23 11:26:50,952 | INFO  | Stopping tcp://127.0.0.1:38881 because Failed with SecurityException: User name [santiago] or password is invalid. | org.apache.activemq.broker.TransportConnection | ActiveMQ BrokerService[localhost] Task-2
+2024-08-23 11:29:31,573 | WARN  | Failed to add Connection id=ID:s-VirtualBox-44281-1724430571454-0:0, clientId=1, clientIP=tcp://127.0.0.1:33019 due to User name [santiago] or password is invalid. | org.apache.activemq.broker.TransportConnection | ActiveMQ Transport: tcp:///127.0.0.1:33019@61616
+2024-08-23 11:29:31,573 | WARN  | Security Error occurred on connection to: tcp://127.0.0.1:33019, User name [santiago] or password is invalid. | org.apache.activemq.broker.TransportConnection.Service | ActiveMQ Transport: tcp:///127.0.0.1:33019@61616
+2024-08-23 11:29:33,574 | INFO  | Stopping tcp://127.0.0.1:33019 because Failed with SecurityException: User name [santiago] or password is invalid. | org.apache.activemq.broker.TransportConnection | ActiveMQ BrokerService[localhost] Task-4
+2024-08-23 11:30:05,727 | WARN  | Failed to add Connection id=ID:s-VirtualBox-33681-1724430605596-0:0, clientId=1, clientIP=tcp://127.0.0.1:38599 due to User name [null] or password is invalid. | org.apache.activemq.broker.TransportConnection | ActiveMQ Transport: tcp:///127.0.0.1:38599@61616
+2024-08-23 11:30:05,728 | WARN  | Security Error occurred on connection to: tcp://127.0.0.1:38599, User name [null] or password is invalid. | org.apache.activemq.broker.TransportConnection.Service | ActiveMQ Transport: tcp:///127.0.0.1:38599@61616
+2024-08-23 11:30:07,729 | INFO  | Stopping tcp://127.0.0.1:38599 because Failed with SecurityException: User name [null] or password is invalid. | org.apache.activemq.broker.TransportConnection | ActiveMQ BrokerService[localhost] Task-6
+2024-08-23 11:30:14,938 | WARN  | Failed to add Connection id=ID:s-VirtualBox-46587-1724430614829-0:0, clientId=1, clientIP=tcp://127.0.0.1:41995 due to User name [null] or password is invalid. | org.apache.activemq.broker.TransportConnection | ActiveMQ Transport: tcp:///127.0.0.1:41995@61616
+2024-08-23 11:30:14,938 | WARN  | Security Error occurred on connection to: tcp://127.0.0.1:41995, User name [null] or password is invalid. | org.apache.activemq.broker.TransportConnection.Service | ActiveMQ Transport: tcp:///127.0.0.1:41995@61616
+2024-08-23 11:30:16,939 | INFO  | Stopping tcp://127.0.0.1:41995 because Failed with SecurityException: User name [null] or password is invalid. | org.apache.activemq.broker.TransportConnection | ActiveMQ BrokerService[localhost] Task-6
+2024-08-23 11:34:49,902 | WARN  | Failed to add Connection id=ID:s-VirtualBox-35277-1724430889790-0:0, clientId=1, clientIP=tcp://127.0.0.1:38825 due to User name [null] or password is invalid. | org.apache.activemq.broker.TransportConnection | ActiveMQ Transport: tcp:///127.0.0.1:38825@61616
+2024-08-23 11:34:49,904 | WARN  | Security Error occurred on connection to: tcp://127.0.0.1:38825, User name [null] or password is invalid. | org.apache.activemq.broker.TransportConnection.Service | ActiveMQ Transport: tcp:///127.0.0.1:38825@61616
+2024-08-23 11:34:51,905 | INFO  | Stopping tcp://127.0.0.1:38825 because Failed with SecurityException: User name [null] or password is invalid. | org.apache.activemq.broker.TransportConnection | ActiveMQ BrokerService[localhost] Task-7
+2024-08-23 11:40:21,762 | INFO  | Apache ActiveMQ 5.18.5 (localhost, ID:s-VirtualBox-37781-1724430391820-0:1) is shutting down | org.apache.activemq.broker.BrokerService | Thread-20
+2024-08-23 11:40:21,765 | INFO  | Connector openwire stopped | org.apache.activemq.broker.TransportConnector | Thread-20
+2024-08-23 11:40:21,766 | INFO  | Connector amqp stopped | org.apache.activemq.broker.TransportConnector | Thread-20
+2024-08-23 11:40:21,770 | INFO  | Connector stomp stopped | org.apache.activemq.broker.TransportConnector | Thread-20
+2024-08-23 11:40:21,770 | INFO  | socketQueue interrupted - stopping | org.apache.activemq.transport.tcp.TcpTransportServer | ActiveMQ Transport Server Thread Handler: stomp://0.0.0.0:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+2024-08-23 11:40:21,772 | INFO  | Could not accept connection during shutdown  : null (null) | org.apache.activemq.broker.TransportConnector | ActiveMQ Transport Server Thread Handler: stomp://0.0.0.0:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+2024-08-23 11:40:21,773 | INFO  | Connector mqtt stopped | org.apache.activemq.broker.TransportConnector | Thread-20
+2024-08-23 11:40:21,864 | INFO  | Connector ws stopped | org.apache.activemq.broker.TransportConnector | Thread-20
+2024-08-23 11:40:21,897 | INFO  | PListStore:[/media/sf_Own_UCI/apache-activemq-5.18.5/data/localhost/tmp_storage] stopped | org.apache.activemq.store.kahadb.plist.PListStoreImpl | Thread-20
+2024-08-23 11:40:21,903 | INFO  | Stopping async queue tasks | org.apache.activemq.store.kahadb.KahaDBStore | Thread-20
+2024-08-23 11:40:21,903 | INFO  | Stopping async topic tasks | org.apache.activemq.store.kahadb.KahaDBStore | Thread-20
+2024-08-23 11:40:21,903 | INFO  | Stopped KahaDB | org.apache.activemq.store.kahadb.KahaDBStore | Thread-20
+2024-08-23 11:40:21,929 | INFO  | Apache ActiveMQ 5.18.5 (localhost, ID:s-VirtualBox-37781-1724430391820-0:1) uptime 13 minutes | org.apache.activemq.broker.BrokerService | Thread-20
+2024-08-23 11:40:21,929 | INFO  | Apache ActiveMQ 5.18.5 (localhost, ID:s-VirtualBox-37781-1724430391820-0:1) is shutdown | org.apache.activemq.broker.BrokerService | Thread-20
+2024-08-23 11:40:29,549 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[/media/sf_Own_UCI/apache-activemq-5.18.5/data/kahadb] | org.apache.activemq.broker.BrokerService | main
+2024-08-23 11:40:29,580 | INFO  | Starting Persistence Adapter: KahaDBPersistenceAdapter[/media/sf_Own_UCI/apache-activemq-5.18.5/data/kahadb] | org.apache.activemq.broker.BrokerService | main
+2024-08-23 11:40:29,610 | INFO  | Starting KahaDBStore | org.apache.activemq.store.kahadb.KahaDBStore | main
+2024-08-23 11:40:29,611 | INFO  | Opening MessageDatabase | org.apache.activemq.store.kahadb.MessageDatabase | main
+2024-08-23 11:40:29,680 | INFO  | KahaDB is version 7 | org.apache.activemq.store.kahadb.MessageDatabase | main
+2024-08-23 11:40:29,870 | INFO  | Starting Temp Data Store | org.apache.activemq.broker.BrokerService | main
+2024-08-23 11:40:29,873 | INFO  | PListStore:[/media/sf_Own_UCI/apache-activemq-5.18.5/data/localhost/tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | main
+2024-08-23 11:40:29,873 | INFO  | Starting Job Scheduler Store | org.apache.activemq.broker.BrokerService | main
+2024-08-23 11:40:29,873 | INFO  | Persistence Adapter successfully started | org.apache.activemq.broker.BrokerService | main
+2024-08-23 11:40:30,261 | INFO  | Apache ActiveMQ 5.18.5 (localhost, ID:s-VirtualBox-35827-1724431229893-0:1) is starting | org.apache.activemq.broker.BrokerService | main
+2024-08-23 11:40:30,322 | INFO  | Listening for connections at: tcp://s-VirtualBox:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2024-08-23 11:40:30,328 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | main
+2024-08-23 11:40:30,337 | INFO  | Listening for connections at: amqp://s-VirtualBox:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2024-08-23 11:40:30,338 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | main
+2024-08-23 11:40:30,346 | INFO  | Listening for connections at: stomp://s-VirtualBox:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2024-08-23 11:40:30,346 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | main
+2024-08-23 11:40:30,365 | INFO  | Listening for connections at: mqtt://s-VirtualBox:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2024-08-23 11:40:30,366 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | main
+2024-08-23 11:40:30,376 | INFO  | Starting Jetty server | org.apache.activemq.transport.WebTransportServerSupport | main
+2024-08-23 11:40:30,421 | INFO  | Creating Jetty connector | org.apache.activemq.transport.WebTransportServerSupport | main
+2024-08-23 11:40:30,498 | WARN  | ServletContext@o.e.j.s.ServletContextHandler@7baf1f5a{/,null,STARTING} has uncovered http methods for path: / | org.eclipse.jetty.security.SecurityHandler | main
+2024-08-23 11:40:30,599 | INFO  | Listening for connections at ws://s-VirtualBox:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | main
+2024-08-23 11:40:30,600 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | main
+2024-08-23 11:40:30,601 | INFO  | Apache ActiveMQ 5.18.5 (localhost, ID:s-VirtualBox-35827-1724431229893-0:1) started | org.apache.activemq.broker.BrokerService | main
+2024-08-23 11:40:30,601 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | main
+2024-08-23 11:40:31,999 | INFO  | ActiveMQ WebConsole available at http://127.0.0.1:8161/ | org.apache.activemq.web.WebConsoleStarter | main
+2024-08-23 11:40:32,000 | INFO  | ActiveMQ Jolokia REST API available at http://127.0.0.1:8161/api/jolokia/ | org.apache.activemq.web.WebConsoleStarter | main
+2024-08-23 11:42:38,465 | WARN  | Failed to add Connection id=ID:s-VirtualBox-33811-1724431358357-0:0, clientId=1, clientIP=tcp://127.0.0.1:40627 due to User name [pene] or password is invalid. | org.apache.activemq.broker.TransportConnection | ActiveMQ Transport: tcp:///127.0.0.1:40627@61616
+2024-08-23 11:42:38,468 | WARN  | Security Error occurred on connection to: tcp://127.0.0.1:40627, User name [pene] or password is invalid. | org.apache.activemq.broker.TransportConnection.Service | ActiveMQ Transport: tcp:///127.0.0.1:40627@61616
+2024-08-23 11:42:40,468 | INFO  | Stopping tcp://127.0.0.1:40627 because Failed with SecurityException: User name [pene] or password is invalid. | org.apache.activemq.broker.TransportConnection | ActiveMQ BrokerService[localhost] Task-3
+2024-08-23 11:49:21,199 | INFO  | Apache ActiveMQ 5.18.5 (localhost, ID:s-VirtualBox-35827-1724431229893-0:1) is shutting down | org.apache.activemq.broker.BrokerService | ActiveMQ ShutdownHook
+2024-08-23 11:49:21,202 | INFO  | Connector openwire stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2024-08-23 11:49:21,226 | INFO  | Connector amqp stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2024-08-23 11:49:21,227 | INFO  | Connector stomp stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2024-08-23 11:49:21,234 | INFO  | Connector mqtt stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2024-08-23 11:49:21,264 | INFO  | Connector ws stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2024-08-23 11:49:21,270 | INFO  | PListStore:[/media/sf_Own_UCI/apache-activemq-5.18.5/data/localhost/tmp_storage] stopped | org.apache.activemq.store.kahadb.plist.PListStoreImpl | ActiveMQ ShutdownHook
+2024-08-23 11:49:21,271 | INFO  | Stopping async queue tasks | org.apache.activemq.store.kahadb.KahaDBStore | ActiveMQ ShutdownHook
+2024-08-23 11:49:21,272 | INFO  | Stopping async topic tasks | org.apache.activemq.store.kahadb.KahaDBStore | ActiveMQ ShutdownHook
+2024-08-23 11:49:21,272 | INFO  | Stopped KahaDB | org.apache.activemq.store.kahadb.KahaDBStore | ActiveMQ ShutdownHook
+2024-08-23 11:49:21,291 | INFO  | Apache ActiveMQ 5.18.5 (localhost, ID:s-VirtualBox-35827-1724431229893-0:1) uptime 8 minutes | org.apache.activemq.broker.BrokerService | ActiveMQ ShutdownHook
+2024-08-23 11:49:21,292 | INFO  | Apache ActiveMQ 5.18.5 (localhost, ID:s-VirtualBox-35827-1724431229893-0:1) is shutdown | org.apache.activemq.broker.BrokerService | ActiveMQ ShutdownHook
+2024-08-23 16:22:56,518 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[/media/sf_Own_UCI/apache-activemq-5.18.5/data/kahadb] | org.apache.activemq.broker.BrokerService | main
+2024-08-23 16:22:56,549 | INFO  | Starting Persistence Adapter: KahaDBPersistenceAdapter[/media/sf_Own_UCI/apache-activemq-5.18.5/data/kahadb] | org.apache.activemq.broker.BrokerService | main
+2024-08-23 16:22:56,609 | INFO  | Starting KahaDBStore | org.apache.activemq.store.kahadb.KahaDBStore | main
+2024-08-23 16:22:56,609 | INFO  | Opening MessageDatabase | org.apache.activemq.store.kahadb.MessageDatabase | main
+2024-08-23 16:22:56,745 | INFO  | KahaDB is version 7 | org.apache.activemq.store.kahadb.MessageDatabase | main
+2024-08-23 16:22:56,808 | INFO  | Recovering from the journal @1:2998 | org.apache.activemq.store.kahadb.MessageDatabase | main
+2024-08-23 16:22:56,832 | INFO  | Recovery replayed 2 operations from the journal in 0.047 seconds. | org.apache.activemq.store.kahadb.MessageDatabase | main
+2024-08-23 16:22:57,248 | INFO  | Starting Temp Data Store | org.apache.activemq.broker.BrokerService | main
+2024-08-23 16:22:57,249 | INFO  | PListStore:[/media/sf_Own_UCI/apache-activemq-5.18.5/data/localhost/tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | main
+2024-08-23 16:22:57,249 | INFO  | Starting Job Scheduler Store | org.apache.activemq.broker.BrokerService | main
+2024-08-23 16:22:57,249 | INFO  | Persistence Adapter successfully started | org.apache.activemq.broker.BrokerService | main
+2024-08-23 16:22:57,500 | INFO  | Apache ActiveMQ 5.18.5 (localhost, ID:s-VirtualBox-35687-1724448177289-0:1) is starting | org.apache.activemq.broker.BrokerService | main
+2024-08-23 16:22:57,687 | INFO  | Listening for connections at: tcp://s-VirtualBox:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2024-08-23 16:22:57,689 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | main
+2024-08-23 16:22:57,710 | INFO  | Listening for connections at: amqp://s-VirtualBox:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2024-08-23 16:22:57,712 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | main
+2024-08-23 16:22:57,727 | INFO  | Listening for connections at: stomp://s-VirtualBox:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2024-08-23 16:22:57,734 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | main
+2024-08-23 16:22:57,763 | INFO  | Listening for connections at: mqtt://s-VirtualBox:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2024-08-23 16:22:57,763 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | main
+2024-08-23 16:22:57,784 | INFO  | Starting Jetty server | org.apache.activemq.transport.WebTransportServerSupport | main
+2024-08-23 16:22:57,884 | INFO  | Creating Jetty connector | org.apache.activemq.transport.WebTransportServerSupport | main
+2024-08-23 16:22:58,065 | WARN  | ServletContext@o.e.j.s.ServletContextHandler@cda6019{/,null,STARTING} has uncovered http methods for path: / | org.eclipse.jetty.security.SecurityHandler | main
+2024-08-23 16:22:58,337 | INFO  | Listening for connections at ws://s-VirtualBox:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | main
+2024-08-23 16:22:58,337 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | main
+2024-08-23 16:22:58,338 | INFO  | Apache ActiveMQ 5.18.5 (localhost, ID:s-VirtualBox-35687-1724448177289-0:1) started | org.apache.activemq.broker.BrokerService | main
+2024-08-23 16:22:58,338 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | main
+2024-08-23 16:23:01,486 | INFO  | ActiveMQ WebConsole available at http://127.0.0.1:8161/ | org.apache.activemq.web.WebConsoleStarter | main
+2024-08-23 16:23:01,488 | INFO  | ActiveMQ Jolokia REST API available at http://127.0.0.1:8161/api/jolokia/ | org.apache.activemq.web.WebConsoleStarter | main
+2024-08-23 16:48:28,605 | WARN  | Failed to add Connection id=ID:s-VirtualBox-44013-1724449708493-0:0, clientId=1, clientIP=tcp://127.0.0.1:36887 due to Broker: localhost - Client: 1 already connected from tcp://127.0.0.1:45271 | org.apache.activemq.broker.TransportConnection | ActiveMQ Transport: tcp:///127.0.0.1:36887@61616
+2024-08-23 16:48:30,613 | INFO  | Stopping tcp://127.0.0.1:36887 because Failed with SecurityException: Broker: localhost - Client: 1 already connected from tcp://127.0.0.1:45271 | org.apache.activemq.broker.TransportConnection | ActiveMQ BrokerService[localhost] Task-11
+2024-08-23 16:48:31,771 | WARN  | Failed to add Connection id=ID:s-VirtualBox-37675-1724449711663-0:0, clientId=1, clientIP=tcp://127.0.0.1:46095 due to Broker: localhost - Client: 1 already connected from tcp://127.0.0.1:45271 | org.apache.activemq.broker.TransportConnection | ActiveMQ Transport: tcp:///127.0.0.1:46095@61616
+2024-08-23 16:48:32,857 | WARN  | Failed to add Connection id=ID:s-VirtualBox-39277-1724449712750-0:0, clientId=1, clientIP=tcp://127.0.0.1:33441 due to Broker: localhost - Client: 1 already connected from tcp://127.0.0.1:45271 | org.apache.activemq.broker.TransportConnection | ActiveMQ Transport: tcp:///127.0.0.1:33441@61616
+2024-08-23 16:48:33,773 | INFO  | Stopping tcp://127.0.0.1:46095 because Failed with SecurityException: Broker: localhost - Client: 1 already connected from tcp://127.0.0.1:45271 | org.apache.activemq.broker.TransportConnection | ActiveMQ BrokerService[localhost] Task-12
+2024-08-23 16:48:34,859 | INFO  | Stopping tcp://127.0.0.1:33441 because Failed with SecurityException: Broker: localhost - Client: 1 already connected from tcp://127.0.0.1:45271 | org.apache.activemq.broker.TransportConnection | ActiveMQ BrokerService[localhost] Task-13
+2024-08-23 16:48:39,355 | WARN  | Failed to add Connection id=ID:s-VirtualBox-40219-1724449719249-0:0, clientId=1, clientIP=tcp://127.0.0.1:34295 due to Broker: localhost - Client: 1 already connected from tcp://127.0.0.1:45271 | org.apache.activemq.broker.TransportConnection | ActiveMQ Transport: tcp:///127.0.0.1:34295@61616
+2024-08-23 16:48:41,357 | INFO  | Stopping tcp://127.0.0.1:34295 because Failed with SecurityException: Broker: localhost - Client: 1 already connected from tcp://127.0.0.1:45271 | org.apache.activemq.broker.TransportConnection | ActiveMQ BrokerService[localhost] Task-12
+2024-08-23 16:49:00,155 | WARN  | Failed to add Connection id=ID:s-VirtualBox-42291-1724449740047-0:0, clientId=1, clientIP=tcp://127.0.0.1:45853 due to Broker: localhost - Client: 1 already connected from tcp://127.0.0.1:45271 | org.apache.activemq.broker.TransportConnection | ActiveMQ Transport: tcp:///127.0.0.1:45853@61616
+2024-08-23 16:49:02,156 | INFO  | Stopping tcp://127.0.0.1:45853 because Failed with SecurityException: Broker: localhost - Client: 1 already connected from tcp://127.0.0.1:45271 | org.apache.activemq.broker.TransportConnection | ActiveMQ BrokerService[localhost] Task-12
+2024-08-23 16:49:25,941 | WARN  | Failed to add Connection id=ID:s-VirtualBox-36023-1724449765825-0:0, clientId=1, clientIP=tcp://127.0.0.1:37707 due to Broker: localhost - Client: 1 already connected from tcp://127.0.0.1:45271 | org.apache.activemq.broker.TransportConnection | ActiveMQ Transport: tcp:///127.0.0.1:37707@61616
+2024-08-23 16:49:27,943 | INFO  | Stopping tcp://127.0.0.1:37707 because Failed with SecurityException: Broker: localhost - Client: 1 already connected from tcp://127.0.0.1:45271 | org.apache.activemq.broker.TransportConnection | ActiveMQ BrokerService[localhost] Task-13
