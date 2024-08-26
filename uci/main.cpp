@@ -20,8 +20,14 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include <cstring>
 #include <cmath>
 #include <set>  // Incluir el encabezado necesario para std::set
+
+// TODO:  openssl
+#include <openssl/evp.h>
+#include <openssl/rand.h>
+#include <openssl/err.h>
 
 
 // TODO: GPS
@@ -46,6 +52,8 @@ string username = "";
 string password = "";
 bool stateReading = true;
 string filenameMessage = "";
+string key = ""; // Clave de 256 bits
+string iv = ""; // IV de 128 bits
 
 mutex optionMutex;
 Session* globalSession = nullptr;
@@ -64,6 +72,10 @@ bool loadXMLFile(const std::string& filename);
 void saveMessageToXML(const std::string& filename, const std::string& uuid,const std::string& dateNow,const std::string& latitudeLongitude, const std::string& messageText);
 string getCurrentDateTime();
 bool getLatitudeLongitude(double &latitude, double &longitude);
+
+string encryptMessage(const string &plaintext, const string &key, const string &iv);
+
+string decryptMessage(const string &ciphertext, const string &key, const string &iv);
 
 // TODO:recordar qu debemos pasar tambien por parametro la ruta del archivo xml y el password y usuario de la session
 int main() {
@@ -152,7 +164,9 @@ void sendMessage(Session* session, Topic* topic) {
     getLatitudeLongitude(latitude,longitude);
     latitudeLongitude = to_string(latitude) + "," + to_string(longitude);
     messageText = uuid + ": " + messageText + " date: " + dateNow + " latitude and longitude: " + latitudeLongitude;
-    TextMessage* message = session->createTextMessage(messageText);
+
+    string eMessage = encryptMessage(messageText,key,iv);
+    TextMessage* message = session->createTextMessage(eMessage);
 
     try {
         producer->send(message);
@@ -177,7 +191,8 @@ void readMessage(MessageConsumer* consumer) {
     if (message != nullptr) {
         TextMessage* textMessage = dynamic_cast<TextMessage*>(message);
         if (textMessage != nullptr) {
-            string messageText = textMessage->getText();
+            string enMessage = textMessage->getText();
+            string messageText = decryptMessage(enMessage,key,iv);
             string uuid, actualMessage, dateNow, latLong;
 
             // Dividir el mensaje en UUID, mensaje y fecha
@@ -295,6 +310,10 @@ bool loadXMLFile(const std::string& filename) {
                     password = value;
                 } else if (std::strcmp(type, "filenameMessage") == 0) {
                     filenameMessage = value;
+                }else if(std::strcmp(type,"key-openssl") == 0){
+                    key = value;
+                }else if(std::strcmp(type,"iv-openssl") == 0){
+                    iv = value;
                 }
             }
 
@@ -387,4 +406,38 @@ bool getLatitudeLongitude(double &latitude, double &longitude){
 
     cerr <<RED<< "\nCould not obtain a valid GPS fix."<< endl;
     return false;
+}
+
+string encryptMessage(const string &plaintext, const string &key, const string &iv) {
+    EVP_CIPHER_CTX *ctx = EVP_CIPHER_CTX_new();
+    int len;
+    int ciphertext_len;
+    unsigned char ciphertext[1024];
+
+    EVP_EncryptInit_ex(ctx, EVP_aes_256_cbc(), NULL, (unsigned char *)key.c_str(), (unsigned char *)iv.c_str());
+    EVP_EncryptUpdate(ctx, ciphertext, &len, (unsigned char *)plaintext.c_str(), plaintext.size());
+    ciphertext_len = len;
+    EVP_EncryptFinal_ex(ctx, ciphertext + len, &len);
+    ciphertext_len += len;
+
+    EVP_CIPHER_CTX_free(ctx);
+
+    return string((char *)ciphertext, ciphertext_len);
+}
+
+string decryptMessage(const string &ciphertext, const string &key, const string &iv) {
+    EVP_CIPHER_CTX *ctx = EVP_CIPHER_CTX_new();
+    int len;
+    int plaintext_len;
+    unsigned char plaintext[1024];
+
+    EVP_DecryptInit_ex(ctx, EVP_aes_256_cbc(), NULL, (unsigned char *)key.c_str(), (unsigned char *)iv.c_str());
+    EVP_DecryptUpdate(ctx, plaintext, &len, (unsigned char *)ciphertext.c_str(), ciphertext.size());
+    plaintext_len = len;
+    EVP_DecryptFinal_ex(ctx, plaintext + len, &len);
+    plaintext_len += len;
+
+    EVP_CIPHER_CTX_free(ctx);
+
+    return std::string((char *)plaintext, plaintext_len);
 }

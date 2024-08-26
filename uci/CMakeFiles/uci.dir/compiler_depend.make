@@ -140,6 +140,7 @@ CMakeFiles/uci.dir/main.cpp.o: main.cpp \
   /usr/include/c++/13/set \
   /usr/include/c++/13/sstream \
   /usr/include/c++/13/stdexcept \
+  /usr/include/c++/13/stdlib.h \
   /usr/include/c++/13/streambuf \
   /usr/include/c++/13/string \
   /usr/include/c++/13/system_error \
@@ -163,6 +164,34 @@ CMakeFiles/uci.dir/main.cpp.o: main.cpp \
   /usr/include/linux/limits.h \
   /usr/include/locale.h \
   /usr/include/math.h \
+  /usr/include/openssl/asn1.h \
+  /usr/include/openssl/asn1err.h \
+  /usr/include/openssl/bio.h \
+  /usr/include/openssl/bioerr.h \
+  /usr/include/openssl/bn.h \
+  /usr/include/openssl/bnerr.h \
+  /usr/include/openssl/core.h \
+  /usr/include/openssl/core_dispatch.h \
+  /usr/include/openssl/crypto.h \
+  /usr/include/openssl/cryptoerr.h \
+  /usr/include/openssl/cryptoerr_legacy.h \
+  /usr/include/openssl/e_os2.h \
+  /usr/include/openssl/err.h \
+  /usr/include/openssl/evp.h \
+  /usr/include/openssl/evperr.h \
+  /usr/include/openssl/lhash.h \
+  /usr/include/openssl/macros.h \
+  /usr/include/openssl/obj_mac.h \
+  /usr/include/openssl/objects.h \
+  /usr/include/openssl/objectserr.h \
+  /usr/include/openssl/opensslv.h \
+  /usr/include/openssl/params.h \
+  /usr/include/openssl/rand.h \
+  /usr/include/openssl/randerr.h \
+  /usr/include/openssl/safestack.h \
+  /usr/include/openssl/stack.h \
+  /usr/include/openssl/symhacks.h \
+  /usr/include/openssl/types.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \
   /usr/include/signal.h \
@@ -296,6 +325,8 @@ CMakeFiles/uci.dir/main.cpp.o: main.cpp \
   /usr/include/x86_64-linux-gnu/c++/13/bits/time_members.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/openssl/configuration.h \
+  /usr/include/x86_64-linux-gnu/openssl/opensslconf.h \
   /usr/include/x86_64-linux-gnu/sys/cdefs.h \
   /usr/include/x86_64-linux-gnu/sys/select.h \
   /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
@@ -582,19 +613,11 @@ tinyxml2.cpp:
 
 /usr/local/include/activemq-cpp-3.10.0/cms/MessageEOFException.h:
 
-/usr/local/include/activemq-cpp-3.10.0/cms/MessageConsumer.h:
-
 /usr/local/include/activemq-cpp-3.10.0/cms/MessageAvailableListener.h:
 
 /usr/local/include/activemq-cpp-3.10.0/decaf/util/Iterator.h:
 
 /usr/local/include/activemq-cpp-3.10.0/cms/IllegalStateException.h:
-
-/usr/include/c++/13/cstdarg:
-
-/usr/local/include/activemq-cpp-3.10.0/cms/MessageFormatException.h:
-
-/usr/local/include/activemq-cpp-3.10.0/cms/Destination.h:
 
 /usr/local/include/activemq-cpp-3.10.0/cms/DeliveryMode.h:
 
@@ -638,6 +661,10 @@ tinyxml2.cpp:
 
 /usr/include/x86_64-linux-gnu/sys/cdefs.h:
 
+/usr/local/include/activemq-cpp-3.10.0/cms/MessageConsumer.h:
+
+/usr/include/x86_64-linux-gnu/openssl/opensslconf.h:
+
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
 
 /usr/local/include/activemq-cpp-3.10.0/decaf/io/InputStream.h:
@@ -668,8 +695,6 @@ tinyxml2.cpp:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h:
 
-/usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h:
-
 /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h:
 
 /usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
@@ -679,8 +704,6 @@ tinyxml2.cpp:
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
 /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
-
-/usr/include/x86_64-linux-gnu/bits/wchar.h:
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
@@ -704,6 +727,56 @@ tinyxml2.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
 
+/usr/include/x86_64-linux-gnu/openssl/configuration.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/stack_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
+
+/usr/local/include/activemq-cpp-3.10.0/cms/Closeable.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/error_t.h:
+
+/usr/local/include/activemq-cpp-3.10.0/decaf/lang/Throwable.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
+
+/usr/local/include/activemq-cpp-3.10.0/decaf/util/AbstractSet.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
+
+/usr/local/include/activemq-cpp-3.10.0/activemq/exceptions/ExceptionDefines.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
+
+/usr/local/include/activemq-cpp-3.10.0/activemq/transport/FutureResponse.h:
+
+/usr/include/x86_64-linux-gnu/bits/types.h:
+
+/usr/include/x86_64-linux-gnu/bits/time64.h:
+
+/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
+
+/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
+
+/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
+
 /usr/include/c++/13/bits/uses_allocator.h:
 
 /usr/include/c++/13/bits/stl_multiset.h:
@@ -719,8 +792,6 @@ tinyxml2.cpp:
 /usr/include/x86_64-linux-gnu/bits/sigstksz.h:
 
 /usr/include/c++/13/ext/type_traits.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
 
 /usr/local/include/activemq-cpp-3.10.0/decaf/lang/exceptions/RuntimeException.h:
 
@@ -739,6 +810,12 @@ tinyxml2.cpp:
 /usr/include/c++/13/ctime:
 
 /usr/include/c++/13/cstdio:
+
+/usr/local/include/activemq-cpp-3.10.0/cms/Queue.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
+
+/usr/include/c++/13/bits/charconv.h:
 
 /usr/include/c++/13/fstream:
 
@@ -774,6 +851,10 @@ tinyxml2.cpp:
 
 /usr/include/c++/13/bits/streambuf.tcc:
 
+/usr/include/x86_64-linux-gnu/bits/types/sigval_t.h:
+
+/usr/include/c++/13/bits/stl_map.h:
+
 /usr/local/include/activemq-cpp-3.10.0/decaf/util/Comparator.h:
 
 /usr/include/c++/13/locale:
@@ -789,12 +870,6 @@ tinyxml2.cpp:
 /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
 
 /usr/include/asm-generic/errno.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
-
-/usr/include/c++/13/ext/numeric_traits.h:
-
-/usr/include/c++/13/bits/stl_iterator.h:
 
 /usr/include/c++/13/bits/functexcept.h:
 
@@ -822,8 +897,6 @@ tinyxml2.cpp:
 
 /usr/include/c++/13/bits/sstream.tcc:
 
-/usr/include/c++/13/cwctype:
-
 /usr/include/c++/13/bits/erase_if.h:
 
 /usr/local/include/activemq-cpp-3.10.0/cms/Message.h:
@@ -833,8 +906,6 @@ tinyxml2.cpp:
 /usr/include/c++/13/bits/this_thread_sleep.h:
 
 /usr/include/c++/13/bits/shared_ptr.h:
-
-/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
 
 /usr/include/c++/13/bits/locale_facets.tcc:
 
@@ -846,13 +917,15 @@ tinyxml2.cpp:
 
 /usr/include/c++/13/bits/cpp_type_traits.h:
 
-/usr/local/include/activemq-cpp-3.10.0/activemq/transport/FutureResponse.h:
-
-/usr/include/x86_64-linux-gnu/bits/types.h:
-
 /usr/include/c++/13/bits/move.h:
 
 /usr/include/c++/13/bits/exception_ptr.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
+
+/usr/include/c++/13/bits/stl_multimap.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_inline.h:
 
@@ -861,12 +934,6 @@ tinyxml2.cpp:
 /usr/include/x86_64-linux-gnu/bits/signal_ext.h:
 
 /usr/include/c++/13/bits/char_traits.h:
-
-/usr/local/include/activemq-cpp-3.10.0/decaf/util/AbstractSet.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
 
 /usr/local/include/activemq-cpp-3.10.0/decaf/lang/Number.h:
 
@@ -896,6 +963,10 @@ tinyxml2.cpp:
 
 /usr/include/c++/13/bits/exception_defines.h:
 
+/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
+
+/usr/include/math.h:
+
 /usr/include/c++/13/bits/localefwd.h:
 
 /usr/include/c++/13/bits/streambuf_iterator.h:
@@ -912,7 +983,11 @@ tinyxml2.cpp:
 
 /usr/include/c++/13/bits/codecvt.h:
 
+/usr/include/openssl/obj_mac.h:
+
 /usr/include/c++/13/backward/binders.h:
+
+/usr/include/openssl/rand.h:
 
 /usr/include/c++/13/ext/string_conversions.h:
 
@@ -942,11 +1017,11 @@ main.cpp:
 
 /usr/include/alloca.h:
 
+/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
+
+/usr/include/openssl/core_dispatch.h:
+
 /usr/include/c++/13/bits/basic_string.tcc:
-
-/usr/include/c++/13/bits/allocated_ptr.h:
-
-/usr/include/c++/13/bit:
 
 /usr/local/include/activemq-cpp-3.10.0/decaf/util/Collection.h:
 
@@ -955,8 +1030,6 @@ main.cpp:
 /usr/include/c++/13/bits/stl_raw_storage_iter.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/error_t.h:
 
 /usr/include/c++/13/algorithm:
 
@@ -978,14 +1051,6 @@ main.cpp:
 
 /usr/include/locale.h:
 
-/usr/local/include/activemq-cpp-3.10.0/activemq/core/ActiveMQConnectionFactory.h:
-
-/usr/include/c++/13/bits/utility.h:
-
-/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
-
-/usr/include/c++/13/bits/concept_check.h:
-
 /usr/include/c++/13/bits/alloc_traits.h:
 
 /usr/include/c++/13/bits/unique_lock.h:
@@ -997,8 +1062,6 @@ main.cpp:
 /usr/include/c++/13/bits/shared_ptr_base.h:
 
 /usr/include/c++/13/bits/basic_ios.h:
-
-/usr/include/x86_64-linux-gnu/bits/time64.h:
 
 /usr/local/include/activemq-cpp-3.10.0/decaf/util/Set.h:
 
@@ -1040,19 +1103,13 @@ main.cpp:
 
 /usr/include/c++/13/streambuf:
 
-/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
-
 /usr/include/c++/13/bits/basic_ios.tcc:
 
 /usr/include/c++/13/bits/functional_hash.h:
 
 /usr/include/errno.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h:
-
 /usr/include/c++/13/bits/ios_base.h:
-
-/usr/include/c++/13/bits/ostream.tcc:
 
 /usr/local/include/activemq-cpp-3.10.0/decaf/util/Properties.h:
 
@@ -1062,19 +1119,21 @@ tinyxml2.h:
 
 /usr/include/x86_64-linux-gnu/bits/posix_opt.h:
 
+/usr/include/x86_64-linux-gnu/bits/timesize.h:
+
+/usr/include/c++/13/bits/locale_classes.h:
+
 /usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
 /usr/include/c++/13/bits/uniform_int_dist.h:
 
 /usr/include/c++/13/bits/locale_classes.tcc:
 
-/usr/include/x86_64-linux-gnu/bits/ss_flags.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h:
-
 /usr/include/x86_64-linux-gnu/bits/confname.h:
 
 /usr/include/c++/13/bits/locale_facets_nonio.h:
+
+/usr/include/openssl/objectserr.h:
 
 /usr/include/c++/13/bits/memoryfwd.h:
 
@@ -1088,6 +1147,10 @@ tinyxml2.h:
 
 /usr/include/c++/13/bits/ostream_insert.h:
 
+/usr/include/c++/13/cwctype:
+
+/usr/include/openssl/cryptoerr.h:
+
 /usr/include/c++/13/bits/locale_facets_nonio.tcc:
 
 /usr/include/c++/13/bits/range_access.h:
@@ -1096,13 +1159,9 @@ tinyxml2.h:
 
 /usr/include/x86_64-linux-gnu/bits/sigcontext.h:
 
-/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
-
 /usr/include/c++/13/bits/fstream.tcc:
 
 /usr/include/c++/13/bits/refwrap.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
 
 /usr/include/c++/13/istream:
 
@@ -1124,11 +1183,13 @@ tinyxml2.h:
 
 /usr/include/c++/13/thread:
 
-/usr/include/c++/13/bits/stl_map.h:
+/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/sigval_t.h:
+/usr/include/c++/13/sstream:
 
 /usr/include/c++/13/stdexcept:
+
+/usr/include/c++/13/stdlib.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
@@ -1137,10 +1198,6 @@ tinyxml2.h:
 /usr/include/c++/13/bits/nested_exception.h:
 
 /usr/include/c++/13/tuple:
-
-/usr/local/include/activemq-cpp-3.10.0/cms/Closeable.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h:
 
 /usr/include/c++/13/type_traits:
 
@@ -1190,6 +1247,98 @@ tinyxml2.h:
 
 /usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
 
+/usr/include/openssl/asn1.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/ss_flags.h:
+
+/usr/include/openssl/asn1err.h:
+
+/usr/include/openssl/bio.h:
+
+/usr/include/c++/13/cstdarg:
+
+/usr/local/include/activemq-cpp-3.10.0/cms/MessageFormatException.h:
+
+/usr/local/include/activemq-cpp-3.10.0/cms/Destination.h:
+
+/usr/include/openssl/bioerr.h:
+
+/usr/include/openssl/lhash.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h:
+
+/usr/include/openssl/bn.h:
+
+/usr/include/openssl/bnerr.h:
+
+/usr/include/openssl/core.h:
+
+/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
+
+/usr/include/openssl/crypto.h:
+
+/usr/include/x86_64-linux-gnu/bits/locale.h:
+
+/usr/include/openssl/cryptoerr_legacy.h:
+
+/usr/include/x86_64-linux-gnu/bits/time.h:
+
+/usr/include/x86_64-linux-gnu/bits/select.h:
+
+/usr/include/openssl/e_os2.h:
+
+/usr/local/include/activemq-cpp-3.10.0/activemq/core/ActiveMQConnectionFactory.h:
+
+/usr/include/c++/13/bits/utility.h:
+
+/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
+
+/usr/include/openssl/err.h:
+
+/usr/include/c++/13/bits/ostream.tcc:
+
+/usr/include/openssl/evp.h:
+
+/usr/include/openssl/evperr.h:
+
+/usr/include/openssl/macros.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
+
+/usr/include/c++/13/ext/numeric_traits.h:
+
+/usr/include/c++/13/bits/stl_iterator.h:
+
+/usr/include/openssl/objects.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
+
+/usr/include/openssl/opensslv.h:
+
+/usr/local/include/activemq-cpp-3.10.0/cms/InvalidDestinationException.h:
+
+/usr/include/stdc-predef.h:
+
+/usr/include/openssl/params.h:
+
+/usr/include/openssl/safestack.h:
+
+/usr/include/c++/13/bits/allocated_ptr.h:
+
+/usr/include/c++/13/bit:
+
+/usr/include/openssl/stack.h:
+
+/usr/include/c++/13/bits/concept_check.h:
+
+/usr/include/openssl/symhacks.h:
+
+/usr/include/x86_64-linux-gnu/bits/wchar.h:
+
+/usr/include/openssl/types.h:
+
 /usr/local/include/activemq-cpp-3.10.0/activemq/transport/ResponseCallback.h:
 
 /usr/include/pthread.h:
@@ -1198,11 +1347,11 @@ tinyxml2.h:
 
 /usr/include/sched.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
+/usr/include/x86_64-linux-gnu/bits/timex.h:
 
-/usr/local/include/activemq-cpp-3.10.0/cms/InvalidDestinationException.h:
+/usr/include/libgpsmm.h:
 
-/usr/include/stdc-predef.h:
+/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
 /usr/include/stdlib.h:
 
@@ -1214,7 +1363,7 @@ tinyxml2.h:
 
 /usr/include/strings.h:
 
-/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
+/usr/include/openssl/randerr.h:
 
 /usr/include/unistd.h:
 
@@ -1238,19 +1387,11 @@ tinyxml2.h:
 
 /usr/include/x86_64-linux-gnu/bits/fp-fast.h:
 
-/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
-
 /usr/include/c++/13/map:
 
 /usr/include/x86_64-linux-gnu/bits/iscanonical.h:
 
 /usr/include/x86_64-linux-gnu/bits/local_lim.h:
-
-/usr/include/c++/13/sstream:
-
-/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/locale.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 
@@ -1268,10 +1409,6 @@ tinyxml2.h:
 
 /usr/include/x86_64-linux-gnu/bits/setjmp.h:
 
-/usr/local/include/activemq-cpp-3.10.0/activemq/exceptions/ExceptionDefines.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
-
 /usr/include/c++/13/bits/stl_pair.h:
 
 /usr/include/x86_64-linux-gnu/bits/errno.h:
@@ -1287,47 +1424,3 @@ tinyxml2.h:
 /usr/include/x86_64-linux-gnu/bits/sigstack.h:
 
 /usr/include/x86_64-linux-gnu/bits/sigthread.h:
-
-/usr/include/x86_64-linux-gnu/bits/select.h:
-
-/usr/include/x86_64-linux-gnu/bits/time.h:
-
-/usr/include/c++/13/bits/locale_classes.h:
-
-/usr/include/x86_64-linux-gnu/bits/timesize.h:
-
-/usr/include/libgpsmm.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
-
-/usr/include/x86_64-linux-gnu/bits/timex.h:
-
-/usr/include/math.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h:
-
-/usr/include/c++/13/bits/stl_multimap.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
-
-/usr/local/include/activemq-cpp-3.10.0/cms/Queue.h:
-
-/usr/include/c++/13/bits/charconv.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
-
-/usr/local/include/activemq-cpp-3.10.0/decaf/lang/Throwable.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/stack_t.h:

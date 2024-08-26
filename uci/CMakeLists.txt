@@ -8,6 +8,7 @@ set(CMAKE_CXX_STANDARD 11)
 include_directories(/usr/local/include/activemq-cpp-3.10.0)
 include_directories(/usr/include/uuid)
 include_directories(/usr/include)
+include_directories(/usr/include/openssl)
 include_directories(/usr/include/apr-1.0)
 
 # Define el ejecutable uci
