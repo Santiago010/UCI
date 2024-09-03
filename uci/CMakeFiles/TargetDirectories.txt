@@ -1,3 +1,0 @@
-/media/sf_Own_UCI/uci/CMakeFiles/uci.dir
-/media/sf_Own_UCI/uci/CMakeFiles/edit_cache.dir
-/media/sf_Own_UCI/uci/CMakeFiles/rebuild_cache.dir
