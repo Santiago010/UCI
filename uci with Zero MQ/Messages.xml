@@ -1,4 +1,5 @@
 <Messages>
     <Message uuid="example-uuid">This is a test message.</Message>
-    <Message uuid="80180b65-87c5-44a6-bb6a-fe38cf363221" date-and-time="2024-09-03 12:25:29" latitude-longitude="0.000000,0.000000">holaaa</Message>
+    <Message uuid="0ff39bd9-3dab-4c26-bea7-04117188c898" date-and-time="2024-09-04 12:00:30" latitude-longitude="0.000000,0.000000">muy buenos dias</Message>
+    <Message uuid="0a4157e4-a880-4f46-a9bf-e36cd468af5f" date-and-time="2024-09-04 12:02:26" latitude-longitude="0.000000,0.000000">estas hay</Message>
 </Messages>

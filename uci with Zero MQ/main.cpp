@@ -34,11 +34,6 @@ using namespace std;
 
 char option = 'r';
 string brokerURI = "";
-string topicName = "";
-string clientID = "";
-string subscriptionName = "";
-string username = "";
-string password = "";
 string filenameMessage = "";
 string key = ""; // Clave de 256 bits
 string iv = ""; // IV de 128 bits
@@ -105,16 +100,14 @@ int main(){
 
 void userInput(zmq::socket_t& p){
     while(true){
-        cout<<BLUE << "--------------------Options-------------------- \ns. Send a Message \ne. Exit \n\nReading Messages..." << endl;
+        cout<<BLUE << "--------------------Options-------------------- \ns. Send a Message \nControl + C. Exit \n\nReading Messages..." << endl;
         cin >> option;
 
         lock_guard<mutex> lock(optionMutex);
 
         if(option == 'e'){
             break;
-        }
-
-        if(option == 's'){
+        }else if(option == 's'){
             cout <<WHITE<< "\nSending a Message..." << endl;
             sendMessage(p);
         }else{
@@ -189,16 +182,6 @@ bool loadXMLFile(const std::string& filename) {
             if (type && value) {
                 if (std::strcmp(type, "brokerURI") == 0) {
                     brokerURI = value;
-                } else if (std::strcmp(type, "topicName") == 0) {
-                    topicName = value;
-                } else if (std::strcmp(type, "clientID") == 0) {
-                    clientID = value;
-                } else if (std::strcmp(type, "subscriptionName") == 0) {
-                    subscriptionName = value;
-                } else if (std::strcmp(type, "username") == 0) {
-                    username = value;
-                } else if (std::strcmp(type, "password") == 0) {
-                    password = value;
                 } else if (std::strcmp(type, "filenameMessage") == 0) {
                     filenameMessage = value;
                 }else if(std::strcmp(type,"key-openssl") == 0){
